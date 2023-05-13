@@ -1,0 +1,115 @@
+
+
+*{
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  
+}
+.btn-openform{
+  cursor: pointer;
+  padding:10px 15px;
+  background-color: black;
+  color: white;
+  
+ 
+}
+
+.btn-submitform{
+  background-color: black;
+  color:white;
+  font-weight: bold;
+  padding:10px 15px;
+  
+}
+
+.subform{
+  width:1800px;
+
+  height: 85vh;
+  background-color: white;
+  padding: 20px;
+  /* logic for center form */
+  position: absolute;
+  
+  top:-50%;
+  left:50%;
+  transform: translate(-50%,-50%);
+  transition: 2s;
+  box-shadow: 0px 0px 10px 3px gray;
+
+  font-size:small;
+  
+
+}
+
+.subform span i{
+  position: absolute;
+    right:0px;
+    top:0px;
+    width:25px;
+    height: 25px;
+    background-color: green;
+    color:white;
+    line-height: 25px;
+    cursor: pointer;
+    text-align: center;
+}
+
+/* .subform input{
+  /* width: 70px;
+  height: 20px ;
+  margin-bottom:8px;
+  padding:4px 5px; */
+ 
+  
+/* } */ 
+
+
+
+
+
+/* .overlay {
+    background:rgba(0,0,0,0.5);
+    width:100%;
+    position: fixed;
+    z-index: -1;
+    height:100vh;
+    top:0%;
+    opacity:0;
+    transition: 1s;
+    
+/* } 
+
+.overlayactive {
+    z-index: 1;
+    opacity: 1;
+    /* pointer-events: initial; 
+} */ 
+
+
+
+
+.active {
+  top:50%;
+  z-index:12;
+}
+
+.container{
+  display: flex;
+
+}
+
+.fitems{
+  width:220px;
+  height: 50px;
+  border:1px solid black;
+  margin:2px 2px;
+
+  
+}
+
+.fitems label{
+  font-size: 16px;
+
+}

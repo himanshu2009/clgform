@@ -1,0 +1,1576 @@
+{% extends 'base.html' %}
+
+
+{% load static %}
+
+{% block content %}
+
+
+
+{% extends 'department.html' %}
+
+
+
+{% block 2 content %}
+<body>
+    <div id="heading_container">
+        <h1><span>Mechanical Engineering</span></h1>
+    </div>
+    <div class="container">
+        <form>
+            <div id="intro_container">
+                <div class='d-flex table-div'>
+                    <div class='d-flex tr-div'>
+                        <div class='d-flex td-div'><label for="name">Name:</label></div>
+                        <div class='d-flex td-div'><input type="text" id="name" name="name"><br></div>
+                    </div>
+                    <div class='d-flex tr-div'>
+                        <div class='d-flex td-div'><label for="year">Year of passing:</label></div>
+                        <div class='d-flex td-div'><input type="date" id="year" name="year"><br></div>
+                    </div>
+                    <div class='d-flex tr-div'>
+                        <div class='d-flex td-div'><label for="Registration Number">Registration Number:</label></div>
+                        <div class='d-flex td-div'><input type="text" id="Reg_No" name="Registration Number"><br></div>
+                    </div>
+                    <div class='d-flex tr-div'>
+                        <div class='d-flex td-div'><label for="Mobile Number">Phone :</label></div>
+                        <div class='d-flex td-div'><input type="number" id="Mobile_num" name="Mobile Number"><br></div>
+                    </div>
+                    <div class='d-flex tr-div'>
+                        <div class='d-flex td-div'><label for="email">Email:</label></div>
+                        <div class='d-flex td-div'><input type="text" id="email" name="email"><br></div>
+                    </div>
+                    <div class='d-flex tr-div'>
+                        <div class='d-flex td-div'><label for="address">Home Address :</label></div>
+                        <div class='d-flex td-div'><input type="text" id="address" name="adderss"><br></div>
+                    </div>
+                    <div class='d-flex tr-div'>
+                        <div class='d-flex td-div'><label for="Ntransscript">No.of Transcript Required :</label></div>
+                        <div class='d-flex td-div'><input type="number" id="no_of_transcript" name="No of Transcript"></div>
+                    </div>
+                </div>
+            </div>
+
+            <hr/>
+
+            <div class="card mt-3 flex-row">
+                
+                <div class="nav flex-column col-3 nav-pills me-3 bg-custom-subtle" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+                    <button class="nav-link active" id="v-pills-sem1-tab" data-bs-toggle="pill" data-bs-target="#v-pills-sem1" type="button" role="tab" aria-controls="v-pills-sem1" aria-selected="true">Semester 1</button>
+                    <button class="nav-link" id="v-pills-sem2-tab" data-bs-toggle="pill" data-bs-target="#v-pills-sem2" type="button" role="tab" aria-controls="v-pills-sem2" aria-selected="false">Semester 2</button>
+                    <button class="nav-link" id="v-pills-sem3-tab" data-bs-toggle="pill" data-bs-target="#v-pills-sem3" type="button" role="tab" aria-controls="v-pills-sem3" aria-selected="false">Semester 3</button>
+                    <button class="nav-link" id="v-pills-sem4-tab" data-bs-toggle="pill" data-bs-target="#v-pills-sem4" type="button" role="tab" aria-controls="v-pills-sem4" aria-selected="false">Semester 4</button>
+                    <button class="nav-link" id="v-pills-sem5-tab" data-bs-toggle="pill" data-bs-target="#v-pills-sem5" type="button" role="tab" aria-controls="v-pills-sem5" aria-selected="false">Semester 5</button>
+                    <button class="nav-link" id="v-pills-sem6-tab" data-bs-toggle="pill" data-bs-target="#v-pills-sem6" type="button" role="tab" aria-controls="v-pills-sem6" aria-selected="false">Semester 6</button>
+                    <button class="nav-link" id="v-pills-sem7-tab" data-bs-toggle="pill" data-bs-target="#v-pills-sem7" type="button" role="tab" aria-controls="v-pills-sem7" aria-selected="false">Semester 7</button>
+                    <button class="nav-link" id="v-pills-sem8-tab" data-bs-toggle="pill" data-bs-target="#v-pills-sem8" type="button" role="tab" aria-controls="v-pills-sem8" aria-selected="false">Semester 8</button>
+                </div>
+
+                <div id="v-pills-tabContent" class="tab-content col-9 py-2">
+                    <div class="tab-pane fade show active" id="v-pills-sem1" role="tabpanel" aria-labelledby="v-pills-sem1-tab" tabindex="0">
+                        <div class='d-flex table-div'>
+                            <div class='d-flex tr-div'>
+                                <div class='d-flex td-div'><label>BSC101 Physics</label></div>
+                                <div class='d-flex td-div'>
+                                        <select id="phyth" name="phyth" required>
+                                            <option value="" disabled selected>Theory</option>
+                                            <option value="A+">A+</option>
+                                            <option value="A">A</option>
+                                            <option value="B+">B+</option>
+                                            <option value="B">B</option>
+                                            <option value="C+">C+</option>
+                                            <option value="C">C</option>
+                                            <option value="D+">D+</option>
+                                            <option value="D">D</option>
+                                            <option value="E+">E+</option>
+                                            <option value="E">E</option>
+                                            <option value="F">F</option>
+                                        </select>
+                                </div>
+                                <div class='d-flex td-div'>
+                                        <select id="phypr" name="phypr" required>
+                                            <option value="" disabled selected>Practical</option>
+                                            <option value="A+">A+</option>
+                                            <option value="A">A</option>
+                                            <option value="B+">B+</option>
+                                            <option value="B">B</option>
+                                            <option value="C+">C+</option>
+                                            <option value="C">C</option>
+                                            <option value="D+">D+</option>
+                                            <option value="D">D</option>
+                                            <option value="E+">E+</option>
+                                            <option value="E">E</option>
+                                            <option value="F">F</option>
+                                        </select>
+                                </div>
+                            </div>
+
+                            <div class='d-flex tr-div'>
+                                <div class='d-flex td-div'><label>BSC103 Mathematic-1</label></div>
+                                <div class='d-flex td-div'>
+                                        <select id="m1th" name="m1th" required>
+                                            <option value="" disabled selected>Theory</option>
+                                            <option value="A+">A+</option>
+                                            <option value="A">A</option>
+                                            <option value="B+">B+</option>
+                                            <option value="B">B</option>
+                                            <option value="C+">C+</option>
+                                            <option value="C">C</option>
+                                            <option value="D+">D+</option>
+                                            <option value="D">D</option>
+                                            <option value="E+">E+</option>
+                                            <option value="E">E</option>
+                                            <option value="F">F</option>
+                                        </select>
+                                </div>
+                            </div>
+
+                            <div class='d-flex tr-div'>
+                                <div class='d-flex td-div'><label>ESC105 Basic Electrical Engineering</label></div>
+                                <div class='d-flex td-div'>
+                                        <select id="beeth" name="beeth" required>
+                                            <option value="" disabled selected>Theory</option>
+                                            <option value="A+">A+</option>
+                                            <option value="A">A</option>
+                                            <option value="B+">B+</option>
+                                            <option value="B">B</option>
+                                            <option value="C+">C+</option>
+                                            <option value="C">C</option>
+                                            <option value="D+">D+</option>
+                                            <option value="D">D</option>
+                                            <option value="E+">E+</option>
+                                            <option value="E">E</option>
+                                            <option value="F">F</option>
+                                        </select>
+                                </div>
+                                <div class='d-flex td-div'>
+                                        <select id="beepr" name="beepr" required>
+                                            <option value="" disabled selected>Practical</option>
+                                            <option value="A+">A+</option>
+                                            <option value="A">A</option>
+                                            <option value="B+">B+</option>
+                                            <option value="B">B</option>
+                                            <option value="C+">C+</option>
+                                            <option value="C">C</option>
+                                            <option value="D+">D+</option>
+                                            <option value="D">D</option>
+                                            <option value="E+">E+</option>
+                                            <option value="E">E</option>
+                                            <option value="F">F</option>
+                                        </select>
+                                </div>
+                            </div>
+
+                            <div class='d-flex tr-div'>
+                                <div class='d-flex td-div'><label>ESC106 Engineering Graphics</label></div>
+                                <div class='d-flex td-div'>
+                                        <select id="egth" name="egth" required>
+                                            <option value="" disabled selected>Theory</option>
+                                            <option value="A+">A+</option>
+                                            <option value="A">A</option>
+                                            <option value="B+">B+</option>
+                                            <option value="B">B</option>
+                                            <option value="C+">C+</option>
+                                            <option value="C">C</option>
+                                            <option value="D+">D+</option>
+                                            <option value="D">D</option>
+                                            <option value="E+">E+</option>
+                                            <option value="E">E</option>
+                                            <option value="F">F</option>
+                                        </select>
+                                </div>
+                                <div class='d-flex td-div'>
+                                        <select id="egpr" name="egpr" required>
+                                            <option value="" disabled selected>Practical</option>
+                                            <option value="A+">A+</option>
+                                            <option value="A">A</option>
+                                            <option value="B+">B+</option>
+                                            <option value="B">B</option>
+                                            <option value="C+">C+</option>
+                                            <option value="C">C</option>
+                                            <option value="D+">D+</option>
+                                            <option value="D">D</option>
+                                            <option value="E+">E+</option>
+                                            <option value="E">E</option>
+                                            <option value="F">F</option>
+                                        </select>
+                                </div>
+                            </div>
+
+                            <div class='d-flex tr-div'>
+                                <div class='d-flex td-div'><label>ESC109 Engineering Mechanics</label></div>
+                                <div class='d-flex td-div'>
+                                        <select id="emth" name="emth" required>
+                                            <option value="" disabled selected>Theory</option>
+                                            <option value="A+">A+</option>
+                                            <option value="A">A</option>
+                                            <option value="B+">B+</option>
+                                            <option value="B">B</option>
+                                            <option value="C+">C+</option>
+                                            <option value="C">C</option>
+                                            <option value="D+">D+</option>
+                                            <option value="D">D</option>
+                                            <option value="E+">E+</option>
+                                            <option value="E">E</option>
+                                            <option value="F">F</option>
+                                        </select>
+                                </div>
+                            </div>
+
+                            <div class='d-flex tr-div'>
+                                <div class='d-flex td-div'><label>LAB112 Engineering Exploration</label></div>
+                                <div class='d-flex td-div'>
+                                    
+                                </div>
+                                <div class='d-flex td-div'>
+                                        <select id="eepr" name="eepr" required>
+                                            <option value="" disabled selected>Practical</option>
+                                            <option value="A+">A+</option>
+                                            <option value="A">A</option>
+                                            <option value="B+">B+</option>
+                                            <option value="B">B</option>
+                                            <option value="C+">C+</option>
+                                            <option value="C">C</option>
+                                            <option value="D+">D+</option>
+                                            <option value="D">D</option>
+                                            <option value="E+">E+</option>
+                                            <option value="E">E</option>
+                                            <option value="F">F</option>
+                                        </select>
+                                </div>
+                            </div>
+
+                            <div class='d-flex tr-div'>
+                                <div class='d-flex td-div'><label>SGPA</label></div>
+                                <div class='d-flex td-div'><input type="number" id="smechsem1" name="smechsem1" placeholder="SGPA" required></div>
+                            </div>
+                                
+                            <div class='d-flex tr-div'>   
+                                <div class='d-flex td-div'><label>CGPA</label></div>
+                                <div class='d-flex td-div'><input type="number" id="cmechsem1" name="cmechsem1" placeholder="CGPA" required></div>
+                            </div>
+
+                            <div class='d-flex tr-div'>
+                                <div class='d-flex td-div'><label>Upload Gradecard</label></div>
+                                <div class='d-flex td-div'>
+                                    <input type="file" id="gc1" name="gc1" accept=".pdf">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="tab-pane fade" id="v-pills-sem2" role="tabpanel" aria-labelledby="v-pills-sem2-tab" tabindex="0">
+                        <div class='d-flex table-div'>
+                            <div class='d-flex tr-div'>
+                                <div class='d-flex td-div'><label>BSC102 Chemistry</label></div>
+                                <div class='d-flex td-div'>
+                                        <select id="cheth" name="cheth" required>
+                                            <option value="" disabled selected>Theory</option>
+                                            <option value="A+">A+</option>
+                                            <option value="A">A</option>
+                                            <option value="B+">B+</option>
+                                            <option value="B">B</option>
+                                            <option value="C+">C+</option>
+                                            <option value="C">C</option>
+                                            <option value="D+">D+</option>
+                                            <option value="D">D</option>
+                                            <option value="E+">E+</option>
+                                            <option value="E">E</option>
+                                            <option value="F">F</option>
+                                        </select>
+                                </div>
+                                <div class='d-flex td-div'>
+                                        <select id="chepr" name="chepr" required>
+                                            <option value="" disabled selected>Practical</option>
+                                            <option value="A+">A+</option>
+                                            <option value="A">A</option>
+                                            <option value="B+">B+</option>
+                                            <option value="B">B</option>
+                                            <option value="C+">C+</option>
+                                            <option value="C">C</option>
+                                            <option value="D+">D+</option>
+                                            <option value="D">D</option>
+                                            <option value="E+">E+</option>
+                                            <option value="E">E</option>
+                                            <option value="F">F</option>
+                                        </select>
+                                </div>
+                            </div>
+
+                            <div class='d-flex tr-div'>
+                                <div class='d-flex td-div'><label>BSC104 Mathematic-2</label></div>
+                                <div class='d-flex td-div'>
+                                        <select id="m2th" name="m2th" required>
+                                            <option value="" disabled selected>Theory</option>
+                                            <option value="A+">A+</option>
+                                            <option value="A">A</option>
+                                            <option value="B+">B+</option>
+                                            <option value="B">B</option>
+                                            <option value="C+">C+</option>
+                                            <option value="C">C</option>
+                                            <option value="D+">D+</option>
+                                            <option value="D">D</option>
+                                            <option value="E+">E+</option>
+                                            <option value="E">E</option>
+                                            <option value="F">F</option>
+                                        </select>
+                                </div>
+                            </div>
+
+                            <div class='d-flex tr-div'>
+                                <div class='d-flex td-div'><label>ESC107 Programming for Problem Solving</label></div>
+                                <div class='d-flex td-div'>
+                                        <select id="ppsth" name="ppsth" required>
+                                            <option value="" disabled selected>Theory</option>
+                                            <option value="A+">A+</option>
+                                            <option value="A">A</option>
+                                            <option value="B+">B+</option>
+                                            <option value="B">B</option>
+                                            <option value="C+">C+</option>
+                                            <option value="C">C</option>
+                                            <option value="D+">D+</option>
+                                            <option value="D">D</option>
+                                            <option value="E+">E+</option>
+                                            <option value="E">E</option>
+                                            <option value="F">F</option>
+                                        </select>
+                                </div>
+                                <div class='d-flex td-div'>
+                                        <select id="ppspr" name="ppspr" required>
+                                            <option value="" disabled selected>Practical</option>
+                                            <option value="A+">A+</option>
+                                            <option value="A">A</option>
+                                            <option value="B+">B+</option>
+                                            <option value="B">B</option>
+                                            <option value="C+">C+</option>
+                                            <option value="C">C</option>
+                                            <option value="D+">D+</option>
+                                            <option value="D">D</option>
+                                            <option value="E+">E+</option>
+                                            <option value="E">E</option>
+                                            <option value="F">F</option>
+                                        </select>
+                                </div>
+                            </div>
+
+                            <div class='d-flex tr-div'>
+                                <div class='d-flex td-div'><label>ESC108 Workshop / Manufacturing Practices</label></div>
+                                <div class='d-flex td-div'>
+                                    
+                                </div>
+                                <div class='d-flex td-div'>
+                                        <select id="wmppr" name="wmppr" required>
+                                            <option value="" disabled selected>Practical</option>
+                                            <option value="A+">A+</option>
+                                            <option value="A">A</option>
+                                            <option value="B+">B+</option>
+                                            <option value="B">B</option>
+                                            <option value="C+">C+</option>
+                                            <option value="C">C</option>
+                                            <option value="D+">D+</option>
+                                            <option value="D">D</option>
+                                            <option value="E+">E+</option>
+                                            <option value="E">E</option>
+                                            <option value="F">F</option>
+                                        </select>
+                                </div>
+                            </div>
+
+                            <div class='d-flex tr-div'>
+                                <div class='d-flex td-div'><label>HMC110 Professional Communication</label></div>
+                                <div class='d-flex td-div'>
+                                        <select id="pcth" name="pcth" required>
+                                            <option value="" disabled selected>Theory</option>
+                                            <option value="A+">A+</option>
+                                            <option value="A">A</option>
+                                            <option value="B+">B+</option>
+                                            <option value="B">B</option>
+                                            <option value="C+">C+</option>
+                                            <option value="C">C</option>
+                                            <option value="D+">D+</option>
+                                            <option value="D">D</option>
+                                            <option value="E+">E+</option>
+                                            <option value="E">E</option>
+                                            <option value="F">F</option>
+                                        </select>
+                                </div>
+                                <div class='d-flex td-div'>
+                                        <select id="pcpr" name="pcpr" required>
+                                            <option value="" disabled selected>Practical</option>
+                                            <option value="A+">A+</option>
+                                            <option value="A">A</option>
+                                            <option value="B+">B+</option>
+                                            <option value="B">B</option>
+                                            <option value="C+">C+</option>
+                                            <option value="C">C</option>
+                                            <option value="D+">D+</option>
+                                            <option value="D">D</option>
+                                            <option value="E+">E+</option>
+                                            <option value="E">E</option>
+                                            <option value="F">F</option>
+                                        </select>
+                                </div>
+                            </div>
+
+                            <div class='d-flex tr-div'>
+                                <div class='d-flex td-div'><label>MAC111 Environmental Science</label></div>
+                                <div class='d-flex td-div'>
+                                    
+                                </div>
+                                <div class='d-flex td-div'>
+                                        <select id="espr" name="espr" required>
+                                            <option value="" disabled selected>Practical</option>
+                                            <option value="A+">A+</option>
+                                            <option value="A">A</option>
+                                            <option value="B+">B+</option>
+                                            <option value="B">B</option>
+                                            <option value="C+">C+</option>
+                                            <option value="C">C</option>
+                                            <option value="D+">D+</option>
+                                            <option value="D">D</option>
+                                            <option value="E+">E+</option>
+                                            <option value="E">E</option>
+                                            <option value="F">F</option>
+                                        </select>
+                                </div>
+                            </div>
+
+                            <div class='d-flex tr-div'>
+                                <div class='d-flex td-div'><label>SGPA</label></div>
+                                <div class='d-flex td-div'><input type="number" id="smechsem2" name="smechsem2" placeholder="SGPA" required></div>
+                            </div>
+                                
+                            <div class='d-flex tr-div'>    
+                                <div class='d-flex td-div'><label>CGPA</label></div>
+                                <div class='d-flex td-div'><input type="number" id="cmechsem2" name="cmechsem2" placeholder="CGPA" required></div>
+                            </div>
+
+                            <div class='d-flex tr-div'>
+                                <div class='d-flex td-div'><label>Upload Gradecard</label></div>
+                                <div class='d-flex td-div'>
+                                    <input type="file" id="gc2" name="gc2" accept=".pdf">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="tab-pane fade" id="v-pills-sem3" role="tabpanel" aria-labelledby="v-pills-sem3-tab" tabindex="0">
+                        <div class='d-flex table-div'>
+                            <div class='d-flex tr-div'>
+                                <div class='d-flex td-div'><label>BSC271 Mathematics-III: Transform Calculus and differential Equations</label></div>
+                                <div class='d-flex td-div'>
+                                        <select id="m3th" name="m3th" required>
+                                            <option value="" disabled selected>Theory</option>
+                                            <option value="A+">A+</option>
+                                            <option value="A">A</option>
+                                            <option value="B+">B+</option>
+                                            <option value="B">B</option>
+                                            <option value="C+">C+</option>
+                                            <option value="C">C</option>
+                                            <option value="D+">D+</option>
+                                            <option value="D">D</option>
+                                            <option value="E+">E+</option>
+                                            <option value="E">E</option>
+                                            <option value="F">F</option>
+                                        </select>
+                                </div>
+                            </div>
+
+                            <div class='d-flex tr-div'>
+                                <div class='d-flex td-div'><label>PCC-ME201 Strength of Material</label></div>
+                                <div class='d-flex td-div'>
+                                        <select id="smth" name="smth" required>
+                                            <option value="" disabled selected>Theory</option>
+                                            <option value="A+">A+</option>
+                                            <option value="A">A</option>
+                                            <option value="B+">B+</option>
+                                            <option value="B">B</option>
+                                            <option value="C+">C+</option>
+                                            <option value="C">C</option>
+                                            <option value="D+">D+</option>
+                                            <option value="D">D</option>
+                                            <option value="E+">E+</option>
+                                            <option value="E">E</option>
+                                            <option value="F">F</option>
+                                        </select>
+                                </div>
+                                <div class='d-flex td-div'>
+                                        <select id="smpr" name="smpr" required>
+                                            <option value="" disabled selected>Practical</option>
+                                            <option value="A+">A+</option>
+                                            <option value="A">A</option>
+                                            <option value="B+">B+</option>
+                                            <option value="B">B</option>
+                                            <option value="C+">C+</option>
+                                            <option value="C">C</option>
+                                            <option value="D+">D+</option>
+                                            <option value="D">D</option>
+                                            <option value="E+">E+</option>
+                                            <option value="E">E</option>
+                                            <option value="F">F</option>
+                                        </select>
+                                </div>
+                            </div>
+
+                            <div class='d-flex tr-div'>
+                                <div class='d-flex td-div'><label>PCC-ME202 Thermodynamics</label></div>
+                                <div class='d-flex td-div'>
+                                        <select id="tth" name="tth" required>
+                                            <option value="" disabled selected>Theory</option>
+                                            <option value="A+">A+</option>
+                                            <option value="A">A</option>
+                                            <option value="B+">B+</option>
+                                            <option value="B">B</option>
+                                            <option value="C+">C+</option>
+                                            <option value="C">C</option>
+                                            <option value="D+">D+</option>
+                                            <option value="D">D</option>
+                                            <option value="E+">E+</option>
+                                            <option value="E">E</option>
+                                            <option value="F">F</option>
+                                        </select>
+                                </div>
+                                <div class='d-flex td-div'>
+                                        <select id="tpr" name="tpr" required>
+                                            <option value="" disabled selected>Practical</option>
+                                            <option value="A+">A+</option>
+                                            <option value="A">A</option>
+                                            <option value="B+">B+</option>
+                                            <option value="B">B</option>
+                                            <option value="C+">C+</option>
+                                            <option value="C">C</option>
+                                            <option value="D+">D+</option>
+                                            <option value="D">D</option>
+                                            <option value="E+">E+</option>
+                                            <option value="E">E</option>
+                                            <option value="F">F</option>
+                                        </select>
+                                </div>
+                            </div>
+
+                            <div class='d-flex tr-div'>
+                                <div class='d-flex td-div'><label>PCC-ME203 Mechanical Instrumentation</label></div>
+                                <div class='d-flex td-div'>
+                                        <select id="mith" name="mith" required>
+                                            <option value="" disabled selected>Theory</option>
+                                            <option value="A+">A+</option>
+                                            <option value="A">A</option>
+                                            <option value="B+">B+</option>
+                                            <option value="B">B</option>
+                                            <option value="C+">C+</option>
+                                            <option value="C">C</option>
+                                            <option value="D+">D+</option>
+                                            <option value="D">D</option>
+                                            <option value="E+">E+</option>
+                                            <option value="E">E</option>
+                                            <option value="F">F</option>
+                                        </select>
+                                </div>
+                                <div class='d-flex td-div'>
+                                        <select id="mipr" name="mipr" required>
+                                            <option value="" disabled selected>Practical</option>
+                                            <option value="A+">A+</option>
+                                            <option value="A">A</option>
+                                            <option value="B+">B+</option>
+                                            <option value="B">B</option>
+                                            <option value="C+">C+</option>
+                                            <option value="C">C</option>
+                                            <option value="D+">D+</option>
+                                            <option value="D">D</option>
+                                            <option value="E+">E+</option>
+                                            <option value="E">E</option>
+                                            <option value="F">F</option>
+                                        </select>
+                                </div>
+                            </div>
+
+                            <div class='d-flex tr-div'>
+                                <div class='d-flex td-div'><label>PCC-ME205 Materials Engineering</label></div>
+                                <div class='d-flex td-div'>
+                                        <select id="meth" name="meth" required>
+                                            <option value="" disabled selected>Theory</option>
+                                            <option value="A+">A+</option>
+                                            <option value="A">A</option>
+                                            <option value="B+">B+</option>
+                                            <option value="B">B</option>
+                                            <option value="C+">C+</option>
+                                            <option value="C">C</option>
+                                            <option value="D+">D+</option>
+                                            <option value="D">D</option>
+                                            <option value="E+">E+</option>
+                                            <option value="E">E</option>
+                                            <option value="F">F</option>
+                                        </select>
+                                </div>
+                                <div class='d-flex td-div'>
+                                        <select id="mepr" name="mepr" required>
+                                            <option value="" disabled selected>Practical</option>
+                                            <option value="A+">A+</option>
+                                            <option value="A">A</option>
+                                            <option value="B+">B+</option>
+                                            <option value="B">B</option>
+                                            <option value="C+">C+</option>
+                                            <option value="C">C</option>
+                                            <option value="D+">D+</option>
+                                            <option value="D">D</option>
+                                            <option value="E+">E+</option>
+                                            <option value="E">E</option>
+                                            <option value="F">F</option>
+                                        </select>
+                                </div>
+                            </div>
+
+                            <div class='d-flex tr-div'>
+                                <div class='d-flex td-div'><label>HMC278 Human Values and Professional Ethics</label></div>
+                                <div class='d-flex td-div'>
+                                        <select id="hvpeth" name="hvpeth" required>
+                                            <option value="" disabled selected>Theory</option>
+                                            <option value="A+">A+</option>
+                                            <option value="A">A</option>
+                                            <option value="B+">B+</option>
+                                            <option value="B">B</option>
+                                            <option value="C+">C+</option>
+                                            <option value="C">C</option>
+                                            <option value="D+">D+</option>
+                                            <option value="D">D</option>
+                                            <option value="E+">E+</option>
+                                            <option value="E">E</option>
+                                            <option value="F">F</option>
+                                        </select>
+                                </div>
+                            </div>
+
+                            <div class='d-flex tr-div'>
+                                <div class='d-flex td-div'><label>SGPA</label></div>
+                                <div class='d-flex td-div'><input type="number" id="smechsem3" name="smechsem3" placeholder="SGPA" required></div>
+                            </div>    
+                                
+                            <div class='d-flex tr-div'>    
+                                <div class='d-flex td-div'><label>CGPA</label></div>
+                                <div class='d-flex td-div'><input type="number" id="cmechsem3" name="cmechsem3" placeholder="CGPA" required></div>
+                            </div>
+
+                            <div class='d-flex tr-div'>
+                                <div class='d-flex td-div'><label>Upload Gradecard</label></div>
+                                <div class='d-flex td-div'>
+                                    <input type="file" id="gc3" name="gc3" accept=".pdf">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="tab-pane fade" id="v-pills-sem4" role="tabpanel" aria-labelledby="v-pills-sem4-tab" tabindex="0">
+                        <div class='d-flex table-div'>
+                            <div class='d-flex tr-div'>
+                                <div class='d-flex td-div'><label>BSC274 Mathematics-IV: Statistical and Numerical Methods</label></div>
+                                <div class='d-flex td-div'>
+                                        <select id="m4th" name="m4th" required>
+                                            <option value="" disabled selected>Theory</option>
+                                            <option value="A+">A+</option>
+                                            <option value="A">A</option>
+                                            <option value="B+">B+</option>
+                                            <option value="B">B</option>
+                                            <option value="C+">C+</option>
+                                            <option value="C">C</option>
+                                            <option value="D+">D+</option>
+                                            <option value="D">D</option>
+                                            <option value="E+">E+</option>
+                                            <option value="E">E</option>
+                                            <option value="F">F</option>
+                                        </select>
+                                </div>
+                            </div>
+
+                            <div class='d-flex tr-div'>
+                                <div class='d-flex td-div'><label>PCC-ME206 Applied Thermodynamics</label></div>
+                                <div class='d-flex td-div'>
+                                        <select id="atth" name="atth" required>
+                                            <option value="" disabled selected>Theory</option>
+                                            <option value="A+">A+</option>
+                                            <option value="A">A</option>
+                                            <option value="B+">B+</option>
+                                            <option value="B">B</option>
+                                            <option value="C+">C+</option>
+                                            <option value="C">C</option>
+                                            <option value="D+">D+</option>
+                                            <option value="D">D</option>
+                                            <option value="E+">E+</option>
+                                            <option value="E">E</option>
+                                            <option value="F">F</option>
+                                        </select>
+                                </div>
+                                <div class='d-flex td-div'>
+                                        <select id="atpr" name="atpr" required>
+                                            <option value="" disabled selected>Practical</option>
+                                            <option value="A+">A+</option>
+                                            <option value="A">A</option>
+                                            <option value="B+">B+</option>
+                                            <option value="B">B</option>
+                                            <option value="C+">C+</option>
+                                            <option value="C">C</option>
+                                            <option value="D+">D+</option>
+                                            <option value="D">D</option>
+                                            <option value="E+">E+</option>
+                                            <option value="E">E</option>
+                                            <option value="F">F</option>
+                                        </select>
+                                </div>
+                            </div>
+
+                            <div class='d-flex tr-div'>
+                                <div class='d-flex td-div'><label>PCC-ME207 Fluid Mechanics & Hydraulic Machines</label></div>
+                                <div class='d-flex td-div'>
+                                        <select id="fmhmth" name="fmhmth" required>
+                                            <option value="" disabled selected>Theory</option>
+                                            <option value="A+">A+</option>
+                                            <option value="A">A</option>
+                                            <option value="B+">B+</option>
+                                            <option value="B">B</option>
+                                            <option value="C+">C+</option>
+                                            <option value="C">C</option>
+                                            <option value="D+">D+</option>
+                                            <option value="D">D</option>
+                                            <option value="E+">E+</option>
+                                            <option value="E">E</option>
+                                            <option value="F">F</option>
+                                        </select>
+                                </div>
+                                <div class='d-flex td-div'>
+                                        <select id="fmhmpr" name="fmhmpr" required>
+                                            <option value="" disabled selected>Practical</option>
+                                            <option value="A+">A+</option>
+                                            <option value="A">A</option>
+                                            <option value="B+">B+</option>
+                                            <option value="B">B</option>
+                                            <option value="C+">C+</option>
+                                            <option value="C">C</option>
+                                            <option value="D+">D+</option>
+                                            <option value="D">D</option>
+                                            <option value="E+">E+</option>
+                                            <option value="E">E</option>
+                                            <option value="F">F</option>
+                                        </select>
+                                </div>
+                            </div>
+
+                            <div class='d-flex tr-div'>
+                                <div class='d-flex td-div'><label>ESC-ME208 Machine Drawing & CADD</label></div>
+                                <div class='d-flex td-div'>
+                                        <select id="caddth" name="caddth" required>
+                                            <option value="" disabled selected>Theory</option>
+                                            <option value="A+">A+</option>
+                                            <option value="A">A</option>
+                                            <option value="B+">B+</option>
+                                            <option value="B">B</option>
+                                            <option value="C+">C+</option>
+                                            <option value="C">C</option>
+                                            <option value="D+">D+</option>
+                                            <option value="D">D</option>
+                                            <option value="E+">E+</option>
+                                            <option value="E">E</option>
+                                            <option value="F">F</option>
+                                        </select>
+                                </div>
+                                <div class='d-flex td-div'>
+                                        <select id="caddpr" name="caddpr" required>
+                                            <option value="" disabled selected>Practical</option>
+                                            <option value="A+">A+</option>
+                                            <option value="A">A</option>
+                                            <option value="B+">B+</option>
+                                            <option value="B">B</option>
+                                            <option value="C+">C+</option>
+                                            <option value="C">C</option>
+                                            <option value="D+">D+</option>
+                                            <option value="D">D</option>
+                                            <option value="E+">E+</option>
+                                            <option value="E">E</option>
+                                            <option value="F">F</option>
+                                        </select>
+                                </div>
+                            </div>
+
+                            <div class='d-flex tr-div'>
+                                <div class='d-flex td-div'><label>PCC-ME209 Manufacturing Processes-I</label></div>
+                                <div class='d-flex td-div'>
+                                        <select id="mp1th" name="mp1th" required>
+                                            <option value="" disabled selected>Theory</option>
+                                            <option value="A+">A+</option>
+                                            <option value="A">A</option>
+                                            <option value="B+">B+</option>
+                                            <option value="B">B</option>
+                                            <option value="C+">C+</option>
+                                            <option value="C">C</option>
+                                            <option value="D+">D+</option>
+                                            <option value="D">D</option>
+                                            <option value="E+">E+</option>
+                                            <option value="E">E</option>
+                                            <option value="F">F</option>
+                                        </select>
+                                </div>
+                                <div class='d-flex td-div'>
+                                        <select id="mp1pr" name="mp1pr" required>
+                                            <option value="" disabled selected>Practical</option>
+                                            <option value="A+">A+</option>
+                                            <option value="A">A</option>
+                                            <option value="B+">B+</option>
+                                            <option value="B">B</option>
+                                            <option value="C+">C+</option>
+                                            <option value="C">C</option>
+                                            <option value="D+">D+</option>
+                                            <option value="D">D</option>
+                                            <option value="E+">E+</option>
+                                            <option value="E">E</option>
+                                            <option value="F">F</option>
+                                        </select>
+                                </div>
+                            </div>
+
+                            <div class='d-flex tr-div'>
+                                <div class='d-flex td-div'><label>PCC-ME210 Kinematics & Theory of Machines</label></div>
+                                <div class='d-flex td-div'>
+                                        <select id="ktmth" name="ktmth" required>
+                                            <option value="" disabled selected>Theory</option>
+                                            <option value="A+">A+</option>
+                                            <option value="A">A</option>
+                                            <option value="B+">B+</option>
+                                            <option value="B">B</option>
+                                            <option value="C+">C+</option>
+                                            <option value="C">C</option>
+                                            <option value="D+">D+</option>
+                                            <option value="D">D</option>
+                                            <option value="E+">E+</option>
+                                            <option value="E">E</option>
+                                            <option value="F">F</option>
+                                        </select>
+                                </div>
+                                <div class='d-flex td-div'>
+                                        <select id="ktmpr" name="ktmpr" required>
+                                            <option value="" disabled selected>Practical</option>
+                                            <option value="A+">A+</option>
+                                            <option value="A">A</option>
+                                            <option value="B+">B+</option>
+                                            <option value="B">B</option>
+                                            <option value="C+">C+</option>
+                                            <option value="C">C</option>
+                                            <option value="D+">D+</option>
+                                            <option value="D">D</option>
+                                            <option value="E+">E+</option>
+                                            <option value="E">E</option>
+                                            <option value="F">F</option>
+                                        </select>
+                                </div>
+                            </div>
+
+                            <div class='d-flex tr-div'>
+                                <div class='d-flex td-div'><label>MAC277 Indian Constitution</label></div>
+                                <div class='d-flex td-div'>
+                                        <select id="icth" name="icth" required>
+                                            <option value="" disabled selected>Theory</option>
+                                            <option value="A+">A+</option>
+                                            <option value="A">A</option>
+                                            <option value="B+">B+</option>
+                                            <option value="B">B</option>
+                                            <option value="C+">C+</option>
+                                            <option value="C">C</option>
+                                            <option value="D+">D+</option>
+                                            <option value="D">D</option>
+                                            <option value="E+">E+</option>
+                                            <option value="E">E</option>
+                                            <option value="F">F</option>
+                                        </select>
+                                </div>
+                            </div>
+
+                            <div class='d-flex tr-div'>
+                                <div class='d-flex td-div'><label>SGPA</label></div>
+                                <div class='d-flex td-div'><input type="number" id="smechsem4" name="smechsem4" placeholder="SGPA" required></div>
+                            </div>
+                                
+                            <div class='d-flex tr-div'>    
+                                <div class='d-flex td-div'><label>CGPA</label></div>
+                                <div class='d-flex td-div'><input type="number" id="cmechsem4" name="cmechsem4" placeholder="CGPA" required></div>
+                            </div>
+
+                            <div class='d-flex tr-div'>
+                                <div class='d-flex td-div'><label>Upload Gradecard</label></div>
+                                <div class='d-flex td-div'>
+                                    <input type="file" id="gc4" name="gc4" accept=".pdf">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="tab-pane fade" id="v-pills-sem5" role="tabpanel" aria-labelledby="v-pills-sem5-tab" tabindex="0">
+                        <div class='d-flex table-div'>
+                            <div class='d-flex tr-div'>
+                                <div class='d-flex td-div'><label>PCC-ME301 Heat Transfer</label></div>
+                                <div class='d-flex td-div'>
+                                        <select id="htth" name="htth" required>
+                                            <option value="" disabled selected>Theory</option>
+                                            <option value="A+">A+</option>
+                                            <option value="A">A</option>
+                                            <option value="B+">B+</option>
+                                            <option value="B">B</option>
+                                            <option value="C+">C+</option>
+                                            <option value="C">C</option>
+                                            <option value="D+">D+</option>
+                                            <option value="D">D</option>
+                                            <option value="E+">E+</option>
+                                            <option value="E">E</option>
+                                            <option value="F">F</option>
+                                        </select>
+                                </div>
+                                <div class='d-flex td-div'>
+                                        <select id="htpr" name="htpr" required>
+                                            <option value="" disabled selected>Practical</option>
+                                            <option value="A+">A+</option>
+                                            <option value="A">A</option>
+                                            <option value="B+">B+</option>
+                                            <option value="B">B</option>
+                                            <option value="C+">C+</option>
+                                            <option value="C">C</option>
+                                            <option value="D+">D+</option>
+                                            <option value="D">D</option>
+                                            <option value="E+">E+</option>
+                                            <option value="E">E</option>
+                                            <option value="F">F</option>
+                                        </select>
+                                </div>
+                            </div>
+
+                            <div class='d-flex tr-div'>
+                                <div class='d-flex td-div'><label>PCC-ME302 Dynamics of Machines</label></div>
+                                <div class='d-flex td-div'>
+                                        <select id="dmth" name="dmth" required>
+                                            <option value="" disabled selected>Theory</option>
+                                            <option value="A+">A+</option>
+                                            <option value="A">A</option>
+                                            <option value="B+">B+</option>
+                                            <option value="B">B</option>
+                                            <option value="C+">C+</option>
+                                            <option value="C">C</option>
+                                            <option value="D+">D+</option>
+                                            <option value="D">D</option>
+                                            <option value="E+">E+</option>
+                                            <option value="E">E</option>
+                                            <option value="F">F</option>
+                                        </select>
+                                </div>
+                                <div class='d-flex td-div'>
+                                        <select id="dmpr" name="dmpr" required>
+                                            <option value="" disabled selected>Practical</option>
+                                            <option value="A+">A+</option>
+                                            <option value="A">A</option>
+                                            <option value="B+">B+</option>
+                                            <option value="B">B</option>
+                                            <option value="C+">C+</option>
+                                            <option value="C">C</option>
+                                            <option value="D+">D+</option>
+                                            <option value="D">D</option>
+                                            <option value="E+">E+</option>
+                                            <option value="E">E</option>
+                                            <option value="F">F</option>
+                                        </select>
+                                </div>
+                            </div>
+
+                            <div class='d-flex tr-div'>
+                                <div class='d-flex td-div'><label>PCC-ME303 Design of Machine Elements</label></div>
+                                <div class='d-flex td-div'>
+                                        <select id="dmeth" name="dmeth" required>
+                                            <option value="" disabled selected>Theory</option>
+                                            <option value="A+">A+</option>
+                                            <option value="A">A</option>
+                                            <option value="B+">B+</option>
+                                            <option value="B">B</option>
+                                            <option value="C+">C+</option>
+                                            <option value="C">C</option>
+                                            <option value="D+">D+</option>
+                                            <option value="D">D</option>
+                                            <option value="E+">E+</option>
+                                            <option value="E">E</option>
+                                            <option value="F">F</option>
+                                        </select>
+                                </div>
+                                <div class='d-flex td-div'>
+                                        <select id="dmepr" name="dmepr" required>
+                                            <option value="" disabled selected>Practical</option>
+                                            <option value="A+">A+</option>
+                                            <option value="A">A</option>
+                                            <option value="B+">B+</option>
+                                            <option value="B">B</option>
+                                            <option value="C+">C+</option>
+                                            <option value="C">C</option>
+                                            <option value="D+">D+</option>
+                                            <option value="D">D</option>
+                                            <option value="E+">E+</option>
+                                            <option value="E">E</option>
+                                            <option value="F">F</option>
+                                        </select>
+                                </div>
+                            </div>
+
+                            <div class='d-flex tr-div'>
+                                <div class='d-flex td-div'><label>PCC-ME304 Manufacturing Processes-II</label></div>
+                                <div class='d-flex td-div'>
+                                        <select id="mp2th" name="mp2th" required>
+                                            <option value="" disabled selected>Theory</option>
+                                            <option value="A+">A+</option>
+                                            <option value="A">A</option>
+                                            <option value="B+">B+</option>
+                                            <option value="B">B</option>
+                                            <option value="C+">C+</option>
+                                            <option value="C">C</option>
+                                            <option value="D+">D+</option>
+                                            <option value="D">D</option>
+                                            <option value="E+">E+</option>
+                                            <option value="E">E</option>
+                                            <option value="F">F</option>
+                                        </select>
+                                </div>
+                                <div class='d-flex td-div'>
+                                        <select id="mp2pr" name="mp2pr" required>
+                                            <option value="" disabled selected>Practical</option>
+                                            <option value="A+">A+</option>
+                                            <option value="A">A</option>
+                                            <option value="B+">B+</option>
+                                            <option value="B">B</option>
+                                            <option value="C+">C+</option>
+                                            <option value="C">C</option>
+                                            <option value="D+">D+</option>
+                                            <option value="D">D</option>
+                                            <option value="E+">E+</option>
+                                            <option value="E">E</option>
+                                            <option value="F">F</option>
+                                        </select>
+                                </div>
+                            </div>
+
+                            <div class='d-flex tr-div'>
+                                <div class='d-flex td-div'><label>PEC-ME3** Elective-I</label></div>
+                                <div class='d-flex td-div'>
+                                        <select id="e1th" name="e1th" required>
+                                            <option value="" disabled selected>Theory</option>
+                                            <option value="A+">A+</option>
+                                            <option value="A">A</option>
+                                            <option value="B+">B+</option>
+                                            <option value="B">B</option>
+                                            <option value="C+">C+</option>
+                                            <option value="C">C</option>
+                                            <option value="D+">D+</option>
+                                            <option value="D">D</option>
+                                            <option value="E+">E+</option>
+                                            <option value="E">E</option>
+                                            <option value="F">F</option>
+                                        </select>
+                                </div>
+                            </div>
+
+                            <div class='d-flex tr-div'>
+                                <div class='d-flex td-div'><label>SGPA</label></div>
+                                <div class='d-flex td-div'><input type="number" id="smechsem5" name="smechsem5" placeholder="SGPA" required></div>
+                            </div>
+                                
+                            <div class='d-flex tr-div'>    
+                                <div class='d-flex td-div'><label>CGPA</label></div>
+                                <div class='d-flex td-div'><input type="number" id="cmechsem5" name="cmechsem5" placeholder="CGPA" required></div>
+                            </div>
+
+                            <div class='d-flex tr-div'>
+                                <div class='d-flex td-div'><label>Upload Gradecard</label></div>
+                                <div class='d-flex td-div'>
+                                    <input type="file" id="gc5" name="gc5" accept=".pdf">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="tab-pane fade" id="v-pills-sem6" role="tabpanel" aria-labelledby="v-pills-sem6-tab" tabindex="0">
+                        <div class='d-flex table-div'>
+                            <div class='d-flex tr-div'>
+                                <div class='d-flex td-div'><label>PCC- ME308 Machine Design</label></div>
+                                <div class='d-flex td-div'>
+                                        <select id="mdth" name="mdth" required>
+                                            <option value="" disabled selected>Theory</option>
+                                            <option value="A+">A+</option>
+                                            <option value="A">A</option>
+                                            <option value="B+">B+</option>
+                                            <option value="B">B</option>
+                                            <option value="C+">C+</option>
+                                            <option value="C">C</option>
+                                            <option value="D+">D+</option>
+                                            <option value="D">D</option>
+                                            <option value="E+">E+</option>
+                                            <option value="E">E</option>
+                                            <option value="F">F</option>
+                                        </select>
+                                </div>
+                                <div class='d-flex td-div'>
+                                        <select id="mdpr" name="mdpr" required>
+                                            <option value="" disabled selected>Practical</option>
+                                            <option value="A+">A+</option>
+                                            <option value="A">A</option>
+                                            <option value="B+">B+</option>
+                                            <option value="B">B</option>
+                                            <option value="C+">C+</option>
+                                            <option value="C">C</option>
+                                            <option value="D+">D+</option>
+                                            <option value="D">D</option>
+                                            <option value="E+">E+</option>
+                                            <option value="E">E</option>
+                                            <option value="F">F</option>
+                                        </select>
+                                </div>
+                            </div>
+
+                            <div class='d-flex tr-div'>
+                                <div class='d-flex td-div'><label>PCC-ME309 Refrigeration & Air Conditioning</label></div>
+                                <div class='d-flex td-div'>
+                                        <select id="racth" name="racth" required>
+                                            <option value="" disabled selected>Theory</option>
+                                            <option value="A+">A+</option>
+                                            <option value="A">A</option>
+                                            <option value="B+">B+</option>
+                                            <option value="B">B</option>
+                                            <option value="C+">C+</option>
+                                            <option value="C">C</option>
+                                            <option value="D+">D+</option>
+                                            <option value="D">D</option>
+                                            <option value="E+">E+</option>
+                                            <option value="E">E</option>
+                                            <option value="F">F</option>
+                                        </select>
+                                </div>
+                                <div class='d-flex td-div'>
+                                        <select id="racpr" name="racpr" required>
+                                            <option value="" disabled selected>Practical</option>
+                                            <option value="A+">A+</option>
+                                            <option value="A">A</option>
+                                            <option value="B+">B+</option>
+                                            <option value="B">B</option>
+                                            <option value="C+">C+</option>
+                                            <option value="C">C</option>
+                                            <option value="D+">D+</option>
+                                            <option value="D">D</option>
+                                            <option value="E+">E+</option>
+                                            <option value="E">E</option>
+                                            <option value="F">F</option>
+                                        </select>
+                                </div>
+                            </div>
+
+                            <div class='d-flex tr-div'>
+                                <div class='d-flex td-div'><label>PEC-ME3** Elective-II</label></div>
+                                <div class='d-flex td-div'>
+                                        <select id="e2th" name="e2th" required>
+                                            <option value="" disabled selected>Theory</option>
+                                            <option value="A+">A+</option>
+                                            <option value="A">A</option>
+                                            <option value="B+">B+</option>
+                                            <option value="B">B</option>
+                                            <option value="C+">C+</option>
+                                            <option value="C">C</option>
+                                            <option value="D+">D+</option>
+                                            <option value="D">D</option>
+                                            <option value="E+">E+</option>
+                                            <option value="E">E</option>
+                                            <option value="F">F</option>
+                                        </select>
+                                </div>
+                                <div class='d-flex td-div'>
+                                        <select id="e2pr" name="e2pr" required>
+                                            <option value="" disabled selected>Practical</option>
+                                            <option value="A+">A+</option>
+                                            <option value="A">A</option>
+                                            <option value="B+">B+</option>
+                                            <option value="B">B</option>
+                                            <option value="C+">C+</option>
+                                            <option value="C">C</option>
+                                            <option value="D+">D+</option>
+                                            <option value="D">D</option>
+                                            <option value="E+">E+</option>
+                                            <option value="E">E</option>
+                                            <option value="F">F</option>
+                                        </select>
+                                </div>
+                            </div>
+
+                            <div class='d-flex tr-div'>
+                                <div class='d-flex td-div'><label>PEC-ME3** Elective-III</label></div>
+                                <div class='d-flex td-div'>
+                                        <select id="e3th" name="e3th" required>
+                                            <option value="" disabled selected>Theory</option>
+                                            <option value="A+">A+</option>
+                                            <option value="A">A</option>
+                                            <option value="B+">B+</option>
+                                            <option value="B">B</option>
+                                            <option value="C+">C+</option>
+                                            <option value="C">C</option>
+                                            <option value="D+">D+</option>
+                                            <option value="D">D</option>
+                                            <option value="E+">E+</option>
+                                            <option value="E">E</option>
+                                            <option value="F">F</option>
+                                        </select>
+                                </div>
+                                <div class='d-flex td-div'>
+                                        <select id="e3pr" name="e3pr" required>
+                                            <option value="" disabled selected>Practical</option>
+                                            <option value="A+">A+</option>
+                                            <option value="A">A</option>
+                                            <option value="B+">B+</option>
+                                            <option value="B">B</option>
+                                            <option value="C+">C+</option>
+                                            <option value="C">C</option>
+                                            <option value="D+">D+</option>
+                                            <option value="D">D</option>
+                                            <option value="E+">E+</option>
+                                            <option value="E">E</option>
+                                            <option value="F">F</option>
+                                        </select>
+                                </div>
+                            </div>
+
+                            <div class='d-flex tr-div'>
+                                <div class='d-flex td-div'><label>PCC-ME310 Automation in Manufacturing</label></div>
+                                <div class='d-flex td-div'>
+                                        <select id="amth" name="amth" required>
+                                            <option value="" disabled selected>Theory</option>
+                                            <option value="A+">A+</option>
+                                            <option value="A">A</option>
+                                            <option value="B+">B+</option>
+                                            <option value="B">B</option>
+                                            <option value="C+">C+</option>
+                                            <option value="C">C</option>
+                                            <option value="D+">D+</option>
+                                            <option value="D">D</option>
+                                            <option value="E+">E+</option>
+                                            <option value="E">E</option>
+                                            <option value="F">F</option>
+                                        </select>
+                                </div>
+                                <div class='d-flex td-div'>
+                                        <select id="ampr" name="ampr" required>
+                                            <option value="" disabled selected>Practical</option>
+                                            <option value="A+">A+</option>
+                                            <option value="A">A</option>
+                                            <option value="B+">B+</option>
+                                            <option value="B">B</option>
+                                            <option value="C+">C+</option>
+                                            <option value="C">C</option>
+                                            <option value="D+">D+</option>
+                                            <option value="D">D</option>
+                                            <option value="E+">E+</option>
+                                            <option value="E">E</option>
+                                            <option value="F">F</option>
+                                        </select>
+                                </div>
+                            </div>
+
+                            <div class='d-flex tr-div'>
+                                <div class='d-flex td-div'><label>SGPA</label></div>
+                                <div class='d-flex td-div'><input type="number" id="smechsem6" name="smechsem6" placeholder="SGPA" required></div>
+                            </div>
+                                
+                            <div class='d-flex tr-div'>    
+                                <div class='d-flex td-div'><label>CGPA</label></div>
+                                <div class='d-flex td-div'><input type="number" id="cmechsem6" name="cmechsem6" placeholder="CGPA" required></div>
+                            </div>
+
+                            <div class='d-flex tr-div'>
+                                <div class='d-flex td-div'><label>Upload Gradecard</label></div>
+                                <div class='d-flex td-div'>
+                                    <input type="file" id="gc6" name="gc6" accept=".pdf">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="tab-pane fade" id="v-pills-sem7" role="tabpanel" aria-labelledby="v-pills-sem7-tab" tabindex="0">
+                        <div class='d-flex table-div'>
+                            <div class='d-flex tr-div'>
+                                <div class='d-flex td-div'><label>PCC-ME401 Tool Design</label></div>
+                                <div class='d-flex td-div'>
+                                        <select id="tdth" name="tdth" required>
+                                            <option value="" disabled selected>Theory</option>
+                                            <option value="A+">A+</option>
+                                            <option value="A">A</option>
+                                            <option value="B+">B+</option>
+                                            <option value="B">B</option>
+                                            <option value="C+">C+</option>
+                                            <option value="C">C</option>
+                                            <option value="D+">D+</option>
+                                            <option value="D">D</option>
+                                            <option value="E+">E+</option>
+                                            <option value="E">E</option>
+                                            <option value="F">F</option>
+                                        </select>
+                                </div>
+                                <div class='d-flex td-div'>
+                                        <select id="tdpr" name="tdpr" required>
+                                            <option value="" disabled selected>Practical</option>
+                                            <option value="A+">A+</option>
+                                            <option value="A">A</option>
+                                            <option value="B+">B+</option>
+                                            <option value="B">B</option>
+                                            <option value="C+">C+</option>
+                                            <option value="C">C</option>
+                                            <option value="D+">D+</option>
+                                            <option value="D">D</option>
+                                            <option value="E+">E+</option>
+                                            <option value="E">E</option>
+                                            <option value="F">F</option>
+                                        </select>
+                                </div>
+                            </div>
+
+                            <div class='d-flex tr-div'>
+                                <div class='d-flex td-div'><label>HMC-ME402 Operations Research</label></div>
+                                <div class='d-flex td-div'>
+                                        <select id="orth" name="orth" required>
+                                            <option value="" disabled selected>Theory</option>
+                                            <option value="A+">A+</option>
+                                            <option value="A">A</option>
+                                            <option value="B+">B+</option>
+                                            <option value="B">B</option>
+                                            <option value="C+">C+</option>
+                                            <option value="C">C</option>
+                                            <option value="D+">D+</option>
+                                            <option value="D">D</option>
+                                            <option value="E+">E+</option>
+                                            <option value="E">E</option>
+                                            <option value="F">F</option>
+                                        </select>
+                                </div>
+                                <div class='d-flex td-div'>
+                                        <select id="orpr" name="orpr" required>
+                                            <option value="" disabled selected>Practical</option>
+                                            <option value="A+">A+</option>
+                                            <option value="A">A</option>
+                                            <option value="B+">B+</option>
+                                            <option value="B">B</option>
+                                            <option value="C+">C+</option>
+                                            <option value="C">C</option>
+                                            <option value="D+">D+</option>
+                                            <option value="D">D</option>
+                                            <option value="E+">E+</option>
+                                            <option value="E">E</option>
+                                            <option value="F">F</option>
+                                        </select>
+                                </div>
+                            </div>
+
+                            <div class='d-flex tr-div'>
+                                <div class='d-flex td-div'><label>PEC-ME4** Elective IV</label></div>
+                                <div class='d-flex td-div'>
+                                        <select id="e4th" name="e4th" required>
+                                            <option value="" disabled selected>Theory</option>
+                                            <option value="A+">A+</option>
+                                            <option value="A">A</option>
+                                            <option value="B+">B+</option>
+                                            <option value="B">B</option>
+                                            <option value="C+">C+</option>
+                                            <option value="C">C</option>
+                                            <option value="D+">D+</option>
+                                            <option value="D">D</option>
+                                            <option value="E+">E+</option>
+                                            <option value="E">E</option>
+                                            <option value="F">F</option>
+                                        </select>
+                                </div>
+                                <div class='d-flex td-div'>
+                                        <select id="e4pr" name="e4pr" required>
+                                            <option value="" disabled selected>Practical</option>
+                                            <option value="A+">A+</option>
+                                            <option value="A">A</option>
+                                            <option value="B+">B+</option>
+                                            <option value="B">B</option>
+                                            <option value="C+">C+</option>
+                                            <option value="C">C</option>
+                                            <option value="D+">D+</option>
+                                            <option value="D">D</option>
+                                            <option value="E+">E+</option>
+                                            <option value="E">E</option>
+                                            <option value="F">F</option>
+                                        </select>
+                                </div>
+                            </div>
+
+                            <div class='d-flex tr-div'>
+                                <div class='d-flex td-div'><label>PEC-ME4** Elective V</label></div>
+                                <div class='d-flex td-div'>
+                                        <select id="e5th" name="e5th" required>
+                                            <option value="" disabled selected>Theory</option>
+                                            <option value="A+">A+</option>
+                                            <option value="A">A</option>
+                                            <option value="B+">B+</option>
+                                            <option value="B">B</option>
+                                            <option value="C+">C+</option>
+                                            <option value="C">C</option>
+                                            <option value="D+">D+</option>
+                                            <option value="D">D</option>
+                                            <option value="E+">E+</option>
+                                            <option value="E">E</option>
+                                            <option value="F">F</option>
+                                        </select>
+                                </div>
+                                <div class='d-flex td-div'>
+                                        <select id="e5pr" name="e5pr" required>
+                                            <option value="" disabled selected>Practical</option>
+                                            <option value="A+">A+</option>
+                                            <option value="A">A</option>
+                                            <option value="B+">B+</option>
+                                            <option value="B">B</option>
+                                            <option value="C+">C+</option>
+                                            <option value="C">C</option>
+                                            <option value="D+">D+</option>
+                                            <option value="D">D</option>
+                                            <option value="E+">E+</option>
+                                            <option value="E">E</option>
+                                            <option value="F">F</option>
+                                        </select>
+                                </div>
+                            </div>
+
+                            <div class='d-flex tr-div'>
+                                <div class='d-flex td-div'><label>PEC-ME4** Elective VI</label></div>
+                                <div class='d-flex td-div'>
+                                        <select id="e6th" name="e6th" required>
+                                            <option value="" disabled selected>Theory</option>
+                                            <option value="A+">A+</option>
+                                            <option value="A">A</option>
+                                            <option value="B+">B+</option>
+                                            <option value="B">B</option>
+                                            <option value="C+">C+</option>
+                                            <option value="C">C</option>
+                                            <option value="D+">D+</option>
+                                            <option value="D">D</option>
+                                            <option value="E+">E+</option>
+                                            <option value="E">E</option>
+                                            <option value="F">F</option>
+                                        </select>
+                                </div>
+                            </div>
+
+                            <div class='d-flex tr-div'>
+                                <div class='d-flex td-div'><label>SGPA</label></div>
+                                <div class='d-flex td-div'><input type="number" id="smechsem7" name="smechsem7" placeholder="SGPA" required></div>
+                            </div>
+                                
+                            <div class='d-flex tr-div'>    
+                                <div class='d-flex td-div'><label>CGPA</label></div>
+                                <div class='d-flex td-div'><input type="number" id="cmechsem7" name="cmechsem7" placeholder="CGPA" required></div>
+                            </div>
+
+                            <div class='d-flex tr-div'>
+                                <div class='d-flex td-div'><label>Upload Gradecard</label></div>
+                                <div class='d-flex td-div'>
+                                    <input type="file" id="gc7" name="gc7" accept=".pdf">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="tab-pane fade" id="v-pills-sem8" role="tabpanel" aria-labelledby="v-pills-sem8-tab" tabindex="0">
+                        <div class='d-flex table-div'>
+                            <div class='d-flex tr-div'>
+                                <div class='d-flex td-div'><label>SII-ME421 Internship</label></div>
+                                <div class='d-flex td-div'>
+                                    
+                                </div>
+                                <div class='d-flex td-div'>
+                                        <select id="ipr" name="ipr" required>
+                                            <option value="" disabled selected>Practical</option>
+                                            <option value="A+">A+</option>
+                                            <option value="A">A</option>
+                                            <option value="B+">B+</option>
+                                            <option value="B">B</option>
+                                            <option value="C+">C+</option>
+                                            <option value="C">C</option>
+                                            <option value="D+">D+</option>
+                                            <option value="D">D</option>
+                                            <option value="E+">E+</option>
+                                            <option value="E">E</option>
+                                            <option value="F">F</option>
+                                        </select>
+                                </div>
+                            </div>
+
+                            <div class='d-flex tr-div'>
+                                <div class='d-flex td-div'><label>PRJ-ME422 Mini Project</label></div>
+                                <div class='d-flex td-div'>
+                                    
+                                </div>
+                                <div class='d-flex td-div'>
+                                        <select id="minipropr" name="minipropr" required>
+                                            <option value="" disabled selected>Practical</option>
+                                            <option value="A+">A+</option>
+                                            <option value="A">A</option>
+                                            <option value="B+">B+</option>
+                                            <option value="B">B</option>
+                                            <option value="C+">C+</option>
+                                            <option value="C">C</option>
+                                            <option value="D+">D+</option>
+                                            <option value="D">D</option>
+                                            <option value="E+">E+</option>
+                                            <option value="E">E</option>
+                                            <option value="F">F</option>
+                                        </select>
+                                </div>
+                            </div>
+
+                            <div class='d-flex tr-div'>
+                                <div class='d-flex td-div'><label>PRJ-ME423 Major Project</label></div>
+                                <div class='d-flex td-div'>
+                                    
+                                </div>
+                                <div class='d-flex td-div'>
+                                        <select id="majpropr" name="majpropr" required>
+                                            <option value="" disabled selected>Practical</option>
+                                            <option value="A+">A+</option>
+                                            <option value="A">A</option>
+                                            <option value="B+">B+</option>
+                                            <option value="B">B</option>
+                                            <option value="C+">C+</option>
+                                            <option value="C">C</option>
+                                            <option value="D+">D+</option>
+                                            <option value="D">D</option>
+                                            <option value="E+">E+</option>
+                                            <option value="E">E</option>
+                                            <option value="F">F</option>
+                                        </select>
+                                </div>
+                            </div>
+
+                            <div class='d-flex tr-div'>
+                                <div class='d-flex td-div'><label>SGPA</label></div>
+                                <div class='d-flex td-div'><input type="number" id="smechsem8" name="smechsem8" placeholder="SGPA" required></div>
+                            </div>
+                                
+                            <div class='d-flex tr-div'>    
+                                <div class='d-flex td-div'><label>CGPA</label></div>
+                                <div class='d-flex td-div'><input type="number" id="cmechsem8" name="cmechsem8" placeholder="CGPA" required></div>
+                            </div>
+
+                            <div class='d-flex tr-div'>
+                                <div class='d-flex td-div'><label>Upload Gradecard</label></div>
+                                <div class='d-flex td-div'>
+                                    <input type="file" id="gc8" name="gc8" accept=".pdf">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </form>
+    </div>
+    <script>
+        function semChange(e){
+            e.preventDefault();
+            document.querySelector(e.currentTarget.hash);
+        }
+    </script>
+
+
+{% endblock 2 content %}

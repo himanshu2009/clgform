@@ -1,0 +1,129 @@
+
+
+
+{% extends 'enroll/base.html' %}
+
+
+
+
+{% load static %}
+
+{% block content %}
+
+<form method="POST">
+  {% csrf_token %}
+  <label for="semester">Select Semester:</label>
+  <select name="semester" id="semester">
+    {% for semester in subjects %}
+      <option value="{{ semester }}">{{ semester }}</option>
+    {% endfor %}
+  </select>
+  <br><br>
+  <div id="subject-grades"></div>
+  <br><br>
+  <input type="submit" value="Submit">
+</form>
+
+
+{% comment %} 
+{% for subject in subjects %}
+<li>{{subject}}</li>
+
+{% endfor %} {% endcomment %}
+
+
+
+ {% comment %} <select id="country" name="country">
+    <option value="australia">Australia</option>
+    <option value="canada">Canada</option>
+    <option value="usa">USA</option>
+  </select> {% endcomment %}
+
+{% for semester, subjects in subjects.items %}
+
+
+
+
+  <h3>{{ semester }}</h3>
+  <ul>
+  {% for subject in subjects %}
+    <li>{{ subject }}</li>
+  {% endfor %}
+  </ul>
+{% endfor %} 
+{% comment %} {{data}} {% endcomment %}
+{% comment %} 
+{% for data in subject_list2  %}
+
+<label for="">{data}</label> {% endcomment %}
+
+{% comment %} 
+{% endfor %} {% endcomment %}
+
+
+{% comment %} In this example, we're using the slice filter to display only the first two subjects in the "sem 1" list of the cse_subjects
+ dictionary object  {% endcomment %}
+
+ {% comment %} <h3>Semester 1</h3>
+ <ul>
+ {% for subject in subjects%}
+   
+     <li>{{ subject }}</li>
+   
+ {% endfor %}
+ </ul> {% endcomment %}
+ {% block scripts %}
+ <script src="{% static './enroll/js/index.js' %}"></script>
+{% endblock %}
+
+
+{% endblock content %}
+
+
+
+
+                
+                    
+                    
+
+       
+   
+
+
+
+{% comment %} 
+
+        </form>
+
+        
+        <form action="{% url 'savedata2' %}" method="post">
+            {% csrf_token %}
+
+           
+        <label for="1">Enter marks for sem1</label>
+        <input type="number" name="first_sem" id="">
+        
+
+        <label for="2">Enter marks for sem2</label>
+        <input type="number" name="second_sem" id="">
+        <label for="3">Enter marks for sem3</label>
+        <input type="number" name="third_sem" id="">
+        <label for="4">Enter marks for sem4</label>
+        <input type="number" name="fourth_sem" id="">
+        <label for="5">Enter marks for sem5</label>
+        <input type="number" name="fifth_sem" id="">
+        <label for="6">Enter marks for sem6</label>
+        <input type="number" name="sixth_sem" id="">
+        <label for="7">Enter marks for sem7</label>
+        <input type="number" name="seventh_sem" id="">
+        <label for="8">Enter marks for sem8</label>
+        <input type="number" name="eight_sem" id="">
+
+
+        <button type="submit" name="submit">Submit</button> {% endcomment %}
+
+        
+        {% comment %} </form> {% endcomment %}
+    {% comment %} </div> {% endcomment %}
+
+            

@@ -1,0 +1,24 @@
+{% extends 'enroll/base.html' %}
+
+{% load static %}
+
+    <h1><marquee behavior="smooth" direction="left">hello ji kaise ho sare</marquee></h1>
+    <a href="{% url 'logout' %}">logout</a>
+
+    {% comment %} {% block content %}
+    <h1><marquee behavior="smooth" direction="left">hello ji kaise ho sare</marquee></h1>
+    <a href="{% url 'logout' %}">logout</a>
+    {% endblock content %} {% endcomment %}
+
+    {% block content %}
+    
+
+    <div class="container">
+
+
+        <h1>Fill transcript form by pressing link given below</h1>
+        <a href="{% url 'department' %}">Form</a>
+
+    </div>
+    
+    {% endblock content %}

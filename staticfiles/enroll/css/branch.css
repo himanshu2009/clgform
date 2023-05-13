@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Alkatra:wght@400;500;600;700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+#heading_container {
+    height: 250px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: antiquewhite;
+    font-family: Alkatra;
+}
+
+#heading_container h1 {
+    color: snow;
+    font-weight: 700;
+    font-size: 40px;
+    text-shadow: 0px 3px 5px saddlebrown;
+    padding: 5% 7%;
+    background: #0005;
+}
+
+#intro_container {
+    margin: 20px;
+    padding-left: 115px;
+}
+
+hr{
+    height: 2px;
+    border: 0 !important;
+    background-image: linear-gradient(to right, #ffebcd, #540707, #ffebcd);
+}
+
+.card{
+    border: none !important;
+}
+
+.bg-custom-subtle{
+    background: #ffebcd;
+}
+
+.nav-link {
+    color: #ffc107 !important;
+}
+
+.nav-pills .nav-link.active, .nav-pills .show>.nav-link {
+    color: white !important;
+    background-color: #ffc107 !important;
+}
+
+.nav-link:focus, .nav-link:hover {
+    color: #540707 !important;
+}
+
+.table-div {
+    flex-direction: row;
+    width: 100%;
+    flex-wrap: wrap;
+}
+
+.tr-div {
+    flex-direction: column;
+    width: 50%;
+    flex: 0 0 auto;
+}
+
+.tab-pane .tr-div {
+    width: 30%;
+}
+
+input, select {
+    padding: 3px 10px;
+    background: blanchedalmond;
+    color: #540707;
+    border: 4px double #ffc107;
+    font-family: Alkatra !important;
+    width: 70%;
+    margin-top: 6px !important;
+    font-size: 14px !important;
+}
+
+label {
+    color: #540707;
+    font-size: 16px;
+    font-family: Alkatra;
+}
+
+.td-div label {
+    margin-top: 15px;
+}
+
+@media (max-width: 600px) {
+
+    .tr-div {
+        width: 100%;
+    }
+    
+    .tab-pane .tr-div {
+        width: 30%;
+    }
+
+    #intro_container {
+        margin: 20px;
+        padding-left: initial;
+        display: flex;
+        justify-content: center;
+    }
+}
+
+.home{
+    color:red
+}
+
+
+

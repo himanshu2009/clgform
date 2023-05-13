@@ -1,0 +1,67 @@
+{
+  "Computer Science and Engineering": {
+    "sem 1": [
+      "transmission control protocol(Th)",
+      "transmission control protocol(Pr)",
+      "linux operating system(Th)",
+      "linux operating system(Pr)",
+      "adbms(Th)",
+      "adbms(Pr)",
+      "information security(Th)",
+      "information security(Pr)",
+      "big data(Th)",
+      "big data(Pr)",
+      "big data(Th)",
+      "big data(Pr)",
+      "big data(Th)",
+      "big data(Pr)"
+    ],
+    "sem 2": [
+      "Data Structures and Algorithms(Th)",
+      "Data Structures and Algorithms(Pr)",
+      "discreate mathematics(Th)",
+      "discreate mathematics(Pr)",
+      "theory of computation(Th)",
+      "theory of computation(Pr)",
+      "Mathematics-III(Th)",
+      "Mathematics-III(Pr)"
+    ],
+
+    "sem 3":[
+      "Chemistry",
+      "Physics",
+      "Professional communication",
+      "PPS"
+
+    ],
+
+    "sem 4":[
+      "operating system",
+      "cyber security"
+    ],
+    "sem 5":[
+      "operating system",
+      "cyber security"
+    ],
+    "sem 6":[
+      "operating system",
+      "cyber security"
+    ],
+    "sem 7":[
+      "operating system",
+      "cyber security"
+    ],
+    "sem 8":[
+      "operating system",
+      "cyber security"
+    ]
+  },
+  "Information and Technology": {
+    "sem 1": [
+      "Linear Algebra"
+    ],
+    "sem 2": [
+      "Calculus III"
+    ]
+  }
+}

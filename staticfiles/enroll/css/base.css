@@ -1,0 +1,19 @@
+.myclass{
+    color: red ;
+    font-weight: bold;
+    text-decoration: double;
+}
+.div_navbar{
+    background-color:#eeeeee;
+    display:inline;
+    
+}
+
+.ul_navbar li{
+    display: inline;
+}
+
+.listitem{
+    color:red
+}
+

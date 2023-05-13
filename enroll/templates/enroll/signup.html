@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>user registration</title>
+    <link rel="stylesheet" href="{% static 'enroll/css/style.css' %}">
+    
+</head>
+<body>
+    <form action="" method="post" novalidate>
+        {% csrf_token %}
+
+     {% for fm in form %}
+      <div class="form-group mb-3">
+      {{fm.label_tag}} {{fm}} <small class="text-danger">{{fm.errors|striptags}}</small>
+      </div>
+     {% endfor %}
+     <input type="submit" value="Submit" class="btn btn-primary">
+     <br>
+     <div class="text-center text-primary fw-bold"><small>Existing User ? <a href="{%  url 'login'  %}">Login Now</a> </small></div>
+     {% if form.non_field_errors %}
+      {% for error in form.non_field_errors %}
+       <p class="alert alert-danger my-3">{{error}}</p>
+      {% endfor %}
+     {% endif %}
+{% comment %} 
+        {% for fm in form %}
+        {{fm.label_tag}}
+        {{fm}}
+        {{fm.errors|striptags}}
+        <br>
+        <br> {% endcomment %}
+{% comment %} 
+        {% endfor %} {% endcomment %}
+
+
+
+    </form>
+
+    {% if  messages %}
+
+    {% for message in messages  %}
+    <small {% if message.tags %} class="{{message.tags}}"{% endif%}>
+        {{message}} </small>
+
+       
+    {% endfor %}
+    {% endif %}
+
+    
+
+
+    
+    
+</body>
+</html>
