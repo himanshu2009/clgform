@@ -20,7 +20,10 @@ from django.contrib.auth.views import PasswordResetView
 from .forms import CustomPasswordResetForm
 
 
+# deparment page view logic
+def department(request):
 
+    return render(request, 'enroll/department.html')
 
 
 # cse ke form ka logic
@@ -39,20 +42,41 @@ def cse(request):
 
     return render(request, './enroll/cse.html', {'data': cse_subjects})
 
-# deparment page view logic
-def department(request):
-
-    return render(request, 'enroll/department.html')
-
-  
-
 
 def chemical(request):
-    #  student={'id':id}
+
+    # Get the absolute path to the JSON file
+    json_path = os.path.join(os.path.dirname(
+        os.path.abspath(__file__)), '..', 'data', 'subjects.json')
+
+    # Load the JSON data
+    with open(json_path) as f:
+        data = json.load(f)
+
+    #   passing cse subjects
+    entc_subjects = data["Electronics and telecommunication"]
+    # biodata= {'name':"himanshu"}
+
+    return render(request, 'enroll/entc.html', {'data': entc_subjects})
+
     return render(request, './enroll/chemical.html')
 
 
 def civil(request):
+
+    # Get the absolute path to the JSON file
+    json_path = os.path.join(os.path.dirname(
+        os.path.abspath(__file__)), '..', 'data', 'subjects.json')
+
+    # Load the JSON data
+    with open(json_path) as f:
+        data = json.load(f)
+
+    #   passing cse subjects
+    entc_subjects = data["Electronics and telecommunication"]
+    # biodata= {'name':"himanshu"}
+
+    return render(request, 'enroll/entc.html', {'data': entc_subjects})
 
     return render(request, './enroll/civil.html')
 
@@ -68,42 +92,125 @@ def entc(request):
 
     #   passing cse subjects
     entc_subjects = data["Electronics and telecommunication"]
+    # biodata= {'name':"himanshu"}
 
-    return render(request, './enroll/entc.html', {'subjects': entc_subjects})
+    return render(request, 'enroll/entc.html', {'data': entc_subjects})
 
 
 def mech(request):
 
-    return render(request, './enroll/mech.html')
+    # Get the absolute path to the JSON file
+    json_path = os.path.join(os.path.dirname(
+        os.path.abspath(__file__)), '..', 'data', 'subjects.json')
+
+    # Load the JSON data
+    with open(json_path) as f:
+        data = json.load(f)
+
+    #   passing cse subjects
+    entc_subjects = data["Electronics and telecommunication"]
+    # biodata= {'name':"himanshu"}
+
+    return render(request, 'enroll/entc.html', {'data': entc_subjects})
+
+    
 
 
 def electrical(request):
 
-    return render(request, './enroll/electrical.html')
+    # Get the absolute path to the JSON file
+    json_path = os.path.join(os.path.dirname(
+        os.path.abspath(__file__)), '..', 'data', 'subjects.json')
+
+    # Load the JSON data
+    with open(json_path) as f:
+        data = json.load(f)
+
+    #   passing cse subjects
+    entc_subjects = data["Electronics and telecommunication"]
+    # biodata= {'name':"himanshu"}
+
+    return render(request, 'enroll/entc.html', {'data': entc_subjects})
+
 
 
 def it(request):
 
-    return render(request, './enroll/it.html')
+    # Get the absolute path to the JSON file
+    json_path = os.path.join(os.path.dirname(
+        os.path.abspath(__file__)), '..', 'data', 'subjects.json')
+
+    # Load the JSON data
+    with open(json_path) as f:
+        data = json.load(f)
+
+    #   passing cse subjects
+    it_subjects = data["Information Technology"]
+    # biodata= {'name':"himanshu"}
+
+    return render(request, 'enroll/entc.html', {'data': it_subjects})
+
+
 
 
 def production(request):
+
+    # Get the absolute path to the JSON file
+    json_path = os.path.join(os.path.dirname(
+        os.path.abspath(__file__)), '..', 'data', 'subjects.json')
+
+    # Load the JSON data
+    with open(json_path) as f:
+        data = json.load(f)
+
+    #   passing cse subjects
+    entc_subjects = data["Electronics and telecommunication"]
+    # biodata= {'name':"himanshu"}
+
+    return render(request, 'enroll/entc.html', {'data': entc_subjects})
 
     return render(request, './enroll/production.html')
 
 
 def textile(request):
 
+    # Get the absolute path to the JSON file
+    json_path = os.path.join(os.path.dirname(
+        os.path.abspath(__file__)), '..', 'data', 'subjects.json')
+
+    # Load the JSON data
+    with open(json_path) as f:
+        data = json.load(f)
+
+    #   passing cse subjects
+    entc_subjects = data["Electronics and telecommunication"]
+    # biodata= {'name':"himanshu"}
+
+    return render(request, 'enroll/entc.html', {'data': entc_subjects})
+
     return render(request, './enroll/textile.html')
 
 
 def instru(request):
 
+    # Get the absolute path to the JSON file
+    json_path = os.path.join(os.path.dirname(
+        os.path.abspath(__file__)), '..', 'data', 'subjects.json')
+
+    # Load the JSON data
+    with open(json_path) as f:
+        data = json.load(f)
+
+    #   passing cse subjects
+    entc_subjects = data["Electronics and telecommunication"]
+    # biodata= {'name':"himanshu"}
+
+    return render(request, 'enroll/entc.html', {'data': entc_subjects})
+
     return render(request, './enroll/instru.html')
 
 
-
-# registration logic 
+# registration logic
 
 class CustomerRegistrationView(View):
     def get(self, request):
@@ -146,16 +253,11 @@ def user_profile(request):
     return render(request, 'enroll/profile.html', {'user': user})
 
 
+@login_required
 def home(request):
     return render(request, 'enroll/home.html')
-
 
 
 class CustomPasswordResetView(PasswordResetView):
     email_template_name = 'path/to/email/template.html'
     form_class = CustomPasswordResetForm
-
-
-
-
-

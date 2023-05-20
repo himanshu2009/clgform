@@ -8,6 +8,9 @@
 
 {% load static %}
 
+
+{% comment %} {% block validuser %}{% endblock validuser %} {% endcomment %}
+
 {% block content %}
 
 
@@ -50,18 +53,18 @@
   <div class="subform">
     <span onclick="closeModal()"><i class="fa-solid fa-xmark"></i></span>
   
-    <div class>
-      <form id="my-form" method="post" action="#">
+    <div>
+      <form action="enroll/thanku.html"  method="post" id="my-form" >
         {% csrf_token %}
+       
   
         {% for semester, subjects in data.items %}
         <fieldset>
           <legend>{{ semester }}</legend>
           {% for subject in subjects %}
-          <div class="">
+          <div>
             <label for="{{ semester }}-{{ subject }}">{{ subject }}</label>
-            <input type="text" name="gradeinput" id="{{ semester }}-{{ subject }}">
-          </div>
+            <input type="text" name="{{ semester }}-{{ subject }}" id="{{ semester }}-{{ subject }}">          </div>
           {% endfor %}
         </fieldset>
         {% endfor %}
@@ -70,6 +73,7 @@
       </form>
     </div>
   </div>
+
   
 
  
@@ -86,67 +90,7 @@
  <div class="overlay" onclick="closeModal()"></div> 
 
 
-  {% comment %} <select name="semester" id="semester">
-    {% for semester in subjects %}
-      <option value="{{ semester }}">{{ semester }}</option>
-    {% endfor %}
-  </select>
-  <br><br>
-  <div id="subject-grades"></div>
-  <br><br>
-  <input type="submit" value="Submit">
-</form> {% endcomment %}
-
-
-{% comment %} 
-{% for subject in subjects %}
-<li>{{subject}}</li>
-
-{% endfor %} {% endcomment %}
-
-
-
- {% comment %} <select id="country" name="country">
-    <option value="australia">Australia</option>
-    <option value="canada">Canada</option>
-    <option value="usa">USA</option>
-  </select> {% endcomment %}
-
-
-{% comment %} 
-{% for semester, subjects in subjects.items %}
-
-
-
-
-  <h3>{{ semester }}</h3>
-  <ul>
-  {% for subject in subjects %}
-    <li>{{ subject }}</li>
-  {% endfor %}
-  </ul>
-{% endfor %}  {% endcomment %}
-{% comment %} {{data}} {% endcomment %}
-{% comment %} 
-{% for data in subject_list2  %}
-
-<label for="">{data}</label> {% endcomment %}
-
-{% comment %} 
-{% endfor %} {% endcomment %}
-
-
-{% comment %} In this example, we're using the slice filter to display only the first two subjects in the "sem 1" list of the cse_subjects
- dictionary object  {% endcomment %}
-
- {% comment %} <h3>Semester 1</h3>
- <ul>
- {% for subject in subjects%}
-   
-     <li>{{ subject }}</li>
-   
- {% endfor %}
- </ul> {% endcomment %}
+  
  {% block js %}
  <script src="{% static 'enroll/js/script.js' %}"></script>
  <script src="https://kit.fontawesome.com/d945297329.js" crossorigin="anonymous"></script>

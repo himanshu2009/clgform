@@ -6,32 +6,23 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
-   <title> Welcomepage to Sggs digital Canvas| {% block title %} {% endblock title %} </title> 
+   <title> Sggs|{% block title %} {% endblock title %} </title> 
 </head>
 <body>
 
-    {% block content %}
-
-    {% block css %}
-    <link rel="stylesheet" href="{% static 'enroll/css/base.css' %}">
-
-    {% endblock css %}
-   
-
     {% if request.user.is_authenticated %}
-    <div class="div_navbar">
-    <ul class="ul_navbar">
-
-        <li><a href="#" id="profiledropdown" class="myclass"> Welcome, {{request.user.username|capfirst}}</a>
-        </li>
-
-        <h2 class="listitem">hello</h2>
-        <li ><a href="{% url 'passwordchange' %}"  class="myclass"  >ChangePassword</a>
-        </li>
-        <li ><a href="{% url 'logout'%}"   class="myclass">logout</a></li>
+    
+    <div class="navbar">
+        <ul>
+            <li><a href="#" id="profiledropdown" class="myclass"> Welcome, {{request.user.username|capfirst}}</a></li>
+            <li><a href="{% url 'passwordchange' %}" class="myclass">Change Password</a></li>
+            <li><a href="{% url 'logout'%}" class="myclass">Logout</a></li>
+        </ul>
+    </div>
    
     
      {% else %}
+     <ul>
         <li><a href="{%  url 'login' %}">login</a></li> 
         {% comment %} <li><a href="{% url 'customerregistration' %}" class="text-danger">Create an Account</a></li> {% endcomment %}
      
@@ -41,6 +32,22 @@
 
 
     {% endif %}
+   
+
+
+
+    {% block css %}
+    <link rel="stylesheet" href="{% static 'enroll/css/base.css' %}">
+
+    {% endblock css %}
+
+    
+  
+
+
+    
+
+    {% block content %}
     {% block js %}
     {% endblock js %}
 

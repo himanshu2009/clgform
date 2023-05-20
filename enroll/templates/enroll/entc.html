@@ -10,10 +10,83 @@
 
 {% block content %}
 
-<form method="POST">
-  {% csrf_token %}
-  <label for="semester">Select Semester:</label>
-  <select name="semester" id="semester">
+
+{% block css %}
+<link rel="stylesheet" href="{% static 'enroll/css/cse.css' %}">
+
+{% endblock css %}
+
+{% comment %} <form method="POST"> {% endcomment %}
+
+  
+
+
+  {% comment %} <label for="name">Enter your fullame</label>
+  <input type="text" name="name" id="">
+  <label for="branchname">BranchName</label>
+  <input type="text" name="branch" id="">
+  <label for="">address</label>
+  <input type="text" name="" id="">
+  <label for="regno">Registration Number</label>
+  <input type="text" name="" id=""> {% endcomment %}
+
+
+ <button  class="btn-openform" onclick="openModal()">fill sem1 subjectsgrades</button> 
+
+   <!-- Modal Component -->
+
+ {% comment %} <div class="modal">
+    <div class="modal-header" >
+
+    <h1>sem1 subjects</h1>
+    
+
+    <div>
+      <i onclick="closeModal()" class="fa-solid fa-xmark close"></i> 
+    </div>
+  </div> {% endcomment %}
+
+    
+  <div class="subform">
+    <span onclick="closeModal()"><i class="fa-solid fa-xmark"></i></span>
+  
+    <div>
+      <form id="my-form" method="post" action="#">
+        {% csrf_token %}
+  
+        {% for semester, subjects in data.items %}
+        <fieldset>
+          <legend>{{ semester }}</legend>
+          {% for subject in subjects %}
+          <div >
+            <label for="{{ semester }}-{{ subject }}">{{ subject }}</label>
+            <input type="text" name="gradeinput" id="{{ semester }}-{{ subject }}">
+          </div>
+          {% endfor %}
+        </fieldset>
+        {% endfor %}
+        
+        <button type="submit" class="btn-submitform">Submit</button>
+      </form>
+    </div>
+  </div>
+  
+
+ 
+
+
+
+
+   
+
+  
+
+
+  <!-- Overlay -->
+ <div class="overlay" onclick="closeModal()"></div> 
+
+
+  {% comment %} <select name="semester" id="semester">
     {% for semester in subjects %}
       <option value="{{ semester }}">{{ semester }}</option>
     {% endfor %}
@@ -22,7 +95,7 @@
   <div id="subject-grades"></div>
   <br><br>
   <input type="submit" value="Submit">
-</form>
+</form> {% endcomment %}
 
 
 {% comment %} 
@@ -39,6 +112,8 @@
     <option value="usa">USA</option>
   </select> {% endcomment %}
 
+
+{% comment %} 
 {% for semester, subjects in subjects.items %}
 
 
@@ -50,7 +125,7 @@
     <li>{{ subject }}</li>
   {% endfor %}
   </ul>
-{% endfor %} 
+{% endfor %}  {% endcomment %}
 {% comment %} {{data}} {% endcomment %}
 {% comment %} 
 {% for data in subject_list2  %}
@@ -72,58 +147,13 @@
    
  {% endfor %}
  </ul> {% endcomment %}
- {% block scripts %}
- <script src="{% static './enroll/js/index.js' %}"></script>
-{% endblock %}
+ {% block js %}
+ <script src="{% static 'enroll/js/script.js' %}"></script>
+ <script src="https://kit.fontawesome.com/d945297329.js" crossorigin="anonymous"></script>
+{% endblock js %}
+
+
+
 
 
 {% endblock content %}
-
-
-
-
-                
-                    
-                    
-
-       
-   
-
-
-
-{% comment %} 
-
-        </form>
-
-        
-        <form action="{% url 'savedata2' %}" method="post">
-            {% csrf_token %}
-
-           
-        <label for="1">Enter marks for sem1</label>
-        <input type="number" name="first_sem" id="">
-        
-
-        <label for="2">Enter marks for sem2</label>
-        <input type="number" name="second_sem" id="">
-        <label for="3">Enter marks for sem3</label>
-        <input type="number" name="third_sem" id="">
-        <label for="4">Enter marks for sem4</label>
-        <input type="number" name="fourth_sem" id="">
-        <label for="5">Enter marks for sem5</label>
-        <input type="number" name="fifth_sem" id="">
-        <label for="6">Enter marks for sem6</label>
-        <input type="number" name="sixth_sem" id="">
-        <label for="7">Enter marks for sem7</label>
-        <input type="number" name="seventh_sem" id="">
-        <label for="8">Enter marks for sem8</label>
-        <input type="number" name="eight_sem" id="">
-
-
-        <button type="submit" name="submit">Submit</button> {% endcomment %}
-
-        
-        {% comment %} </form> {% endcomment %}
-    {% comment %} </div> {% endcomment %}
-
-            

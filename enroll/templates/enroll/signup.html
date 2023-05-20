@@ -1,59 +1,71 @@
-<!DOCTYPE html>
+
+
+
 {% load static %}
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>user registration</title>
-    <link rel="stylesheet" href="{% static 'enroll/css/style.css' %}">
-    
-</head>
-<body>
-    <form action="" method="post" novalidate>
-        {% csrf_token %}
 
-     {% for fm in form %}
-      <div class="form-group mb-3">
-      {{fm.label_tag}} {{fm}} <small class="text-danger">{{fm.errors|striptags}}</small>
-      </div>
-     {% endfor %}
-     <input type="submit" value="Submit" class="btn btn-primary">
-     <br>
-     <div class="text-center text-primary fw-bold"><small>Existing User ? <a href="{%  url 'login'  %}">Login Now</a> </small></div>
-     {% if form.non_field_errors %}
-      {% for error in form.non_field_errors %}
-       <p class="alert alert-danger my-3">{{error}}</p>
-      {% endfor %}
-     {% endif %}
-{% comment %} 
-        {% for fm in form %}
-        {{fm.label_tag}}
-        {{fm}}
-        {{fm.errors|striptags}}
-        <br>
-        <br> {% endcomment %}
-{% comment %} 
-        {% endfor %} {% endcomment %}
+{% block title %}User Registration{% endblock title %}
+
+<!--Signup Form-->
+{% block content %}
+<link rel="stylesheet" href="{% static 'enroll/css/signup.css' %}">
+
+<div class="signup_content_container">
+    <div class="signup_form_container">
+        <div class="signup_header_container">
+            <h2 class="signup_header">Signup</h2>
+        </div>
+
+        <!--Popup Error-->
 
 
+        <form action="" method="post" novalidate>
+        <div class="signup_form_content_container">
+            {% csrf_token %}
 
-    </form>
+            {% for fm in form %}
+            <div class="form-group mb-3">
+                {{fm.label_tag}} <br/>{{fm}}
+                <br/>
+                <small class="text-danger">{{fm.errors|striptags}}</small> <br/>
+            </div>
+            {% endfor %}
 
-    {% if  messages %}
+            <input type="submit" value="Submit" class="btn btn-primary signup_button_container">
+            <br>
 
-    {% for message in messages  %}
-    <small {% if message.tags %} class="{{message.tags}}"{% endif%}>
-        {{message}} </small>
+            <div class="text-center text-primary fw-bold"><small>Existing User ? <a href="{%  url 'login'  %}" id="signup_account">Login Now</a> </small></div>
+            <br>
 
-       
-    {% endfor %}
-    {% endif %}
+            {% if  messages %}
+                {% for message in messages  %}
+                    <small {% if message.tags %} class="{{message.tags}}"{% endif%}>{{message}}</small>
+                {% endfor %}
+            {% endif %}
 
-    
+            {% if form.non_field_errors %}
+                {% for error in form.non_field_errors %}
+                    <p class="alert alert-danger my-3">{{error}}</p>
+                {% endfor %}
+            {% endif %}
+
+            {% comment %} 
+                {% for fm in form %}
+                {{fm.label_tag}}
+                {{fm}}
+                {{fm.errors|striptags}}
+                <br>
+                <br> 
+            {% endcomment %}
+            {% comment %} 
+                {% endfor %} 
+            {% endcomment %}
+
+        </div>
+        </form>
+
+    </div>
+</div>
 
 
-    
-    
-</body>
-</html>
+
+{% endblock content %}

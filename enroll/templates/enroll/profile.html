@@ -1,16 +1,15 @@
 {% extends 'enroll/base.html' %}
 
 {% load static %}
-
-    <h1><marquee behavior="smooth" direction="left">hello ji kaise ho sare</marquee></h1>
+{% block content %}
+   {% block css %}{% endblock css %}
     <a href="{% url 'logout' %}">logout</a>
 
-    {% comment %} {% block content %}
-    <h1><marquee behavior="smooth" direction="left">hello ji kaise ho sare</marquee></h1>
-    <a href="{% url 'logout' %}">logout</a>
-    {% endblock content %} {% endcomment %}
+    <h1>{{request.user.username}}</h1>
 
-    {% block content %}
+    
+
+    
     
 
     <div class="container">

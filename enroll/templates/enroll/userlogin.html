@@ -1,32 +1,52 @@
-{% extends 'enroll/base.html' %}
+
 
 <!DOCTYPE html>
 
-{% load static %} {% block content %}
+{% load static %}
 
-<form action="" method="post" novalidate>
-  {% csrf_token %} {% for fm in form %}
-  <div class="form-group">
-    {{fm.label_tag}} {{fm}}
-    <small class="text-danger">{{fm.errors|striptags}}</small> <br />
-  </div>
-  {% endfor %}
-  <small><a href="{% url 'password_reset' %}">Forgot Password ?</a></small>
-  <br />
-  <input type="submit" class="btn btn-primary mt-4" value="Login" />
-  <br />
-  <div class="text-center text-primary fw-bold">
-    <small
-      >New to Sggs ?
-      <a href="{% url 'customerregistration' %}" class="text-danger"
-        >Create an Account</a
-      >
-    </small>
-  </div>
 
-  {% if form.non_field_errors %} {% for error in form.non_field_errors %}
-  <p class="alert alert-danger my-3">{{error}}</p>
-  {% endfor %} {% endif %}
-</form>
+<!--Login form-->
+{% block content %}
+<link rel="stylesheet" href='{% static "enroll/css/userlogin.css" %}'>
+<div class="content_container">
+    <div class="form_container">
+        <div class="form_header_container">
+            <h2 class="form_header">Login</h2>
+        </div>  
+        
+        <!--Password or Username incorrect Error popup-->
+        {% if form.non_field_errors %} {% for error in form.non_field_errors %}
+            <div class="error-container">
+                <?xml version="1.0" ?><!DOCTYPE svg  PUBLIC '-//W3C//DTD SVG 1.0//EN'  'http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd'><svg height="16" style="overflow:visible;enable-background:new 0 0 32 32" viewBox="0 0 32 32" width="16" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><g><g id="Error_1_"><g id="Error"><circle cx="16" cy="16" id="BG" r="16" style="fill:#D72828;"/><path d="M14.5,25h3v-3h-3V25z M14.5,6v13h3V6H14.5z" id="Exclamatory_x5F_Sign" style="fill:#E6E6E6;"/></g></g></g></svg>
+                <p class="alert alert-danger my-3">{{error}}</p>
+            </div>
+        {% endfor %} {% endif %}
+
+        <form action="" method="post" novalidate>
+        <div class="form_content_container">
+            {% csrf_token %} 
+            {% for fm in form %}
+            <div class="form-group">
+                {{fm.label_tag}} {{fm}}
+                <br/>
+                <small class="text-danger">{{fm.errors|striptags}}</small> <br />
+            </div>
+            {% endfor %}
+            <small><a href="{% url 'password_reset' %}" id="forgot_password">Forgot Password ?</a></small>
+            <br/>
+            <br/>
+            <div class="">
+                <input type="submit" class="btn btn-primary mt-4 login_button_container" value="Login" />
+            </div>
+            <br />
+            <div class="text-center text-primary fw-bold">
+                <small>New to Sggs ?<a href="{% url 'customerregistration' %}" id="create_account">Create an Account</a></small>
+            </div>
+        
+          </div>
+        </form>
+    </div>
+</div>
+<script src="{% static 'enroll/js/userlogin.js'%}"></script>
 
 {% endblock content %}

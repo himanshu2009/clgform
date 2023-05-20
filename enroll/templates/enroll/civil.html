@@ -1,6 +1,167 @@
+
+
+
 {% extends 'enroll/base.html' %}
+
+
 
 
 {% load static %}
 
-{% block content %}{% endblock content %}
+{% block content %}
+
+
+{% block css %}
+<link rel="stylesheet" href="{% static 'enroll/css/cse.css' %}">
+
+{% endblock css %}
+
+{% comment %} <form method="POST"> {% endcomment %}
+
+  
+
+
+  {% comment %} <label for="name">Enter your fullame</label>
+  <input type="text" name="name" id="">
+  <label for="branchname">BranchName</label>
+  <input type="text" name="branch" id="">
+  <label for="">address</label>
+  <input type="text" name="" id="">
+  <label for="regno">Registration Number</label>
+  <input type="text" name="" id=""> {% endcomment %}
+
+
+ <button  class="btn-openform" onclick="openModal()">fill sem1 subjectsgrades</button> 
+
+   <!-- Modal Component -->
+
+ {% comment %} <div class="modal">
+    <div class="modal-header" >
+
+    <h1>sem1 subjects</h1>
+    
+
+    <div>
+      <i onclick="closeModal()" class="fa-solid fa-xmark close"></i> 
+    </div>
+  </div> {% endcomment %}
+
+    
+  <div class="subform">
+    <span onclick="closeModal()"><i class="fa-solid fa-xmark"></i></span>
+  
+    <div class>
+      <form id="my-form" method="post" action="#">
+        {% csrf_token %}
+  
+        {% for semester, subjects in data.items %}
+        <fieldset>
+          <legend>{{ semester }}</legend>
+          {% for subject in subjects %}
+          <div class="">
+            <label for="{{ semester }}-{{ subject }}">{{ subject }}</label>
+            <input type="text" name="gradeinput" id="{{ semester }}-{{ subject }}">
+          </div>
+          {% endfor %}
+        </fieldset>
+        {% endfor %}
+        
+        <button type="submit" class="btn-submitform">Submit</button>
+      </form>
+    </div>
+  </div>
+  
+
+ 
+
+
+
+
+   
+
+  
+
+
+  <!-- Overlay -->
+ <div class="overlay" onclick="closeModal()"></div> 
+
+
+  {% comment %} <select name="semester" id="semester">
+    {% for semester in subjects %}
+      <option value="{{ semester }}">{{ semester }}</option>
+    {% endfor %}
+  </select>
+  <br><br>
+  <div id="subject-grades"></div>
+  <br><br>
+  <input type="submit" value="Submit">
+</form> {% endcomment %}
+
+
+{% comment %} 
+{% for subject in subjects %}
+<li>{{subject}}</li>
+
+{% endfor %} {% endcomment %}
+
+
+
+ {% comment %} <select id="country" name="country">
+    <option value="australia">Australia</option>
+    <option value="canada">Canada</option>
+    <option value="usa">USA</option>
+  </select> {% endcomment %}
+
+
+{% comment %} 
+{% for semester, subjects in subjects.items %}
+
+
+
+
+  <h3>{{ semester }}</h3>
+  <ul>
+  {% for subject in subjects %}
+    <li>{{ subject }}</li>
+  {% endfor %}
+  </ul>
+{% endfor %}  {% endcomment %}
+{% comment %} {{data}} {% endcomment %}
+{% comment %} 
+{% for data in subject_list2  %}
+
+<label for="">{data}</label> {% endcomment %}
+
+{% comment %} 
+{% endfor %} {% endcomment %}
+
+
+{% comment %} In this example, we're using the slice filter to display only the first two subjects in the "sem 1" list of the cse_subjects
+ dictionary object  {% endcomment %}
+
+ {% comment %} <h3>Semester 1</h3>
+ <ul>
+ {% for subject in subjects%}
+   
+     <li>{{ subject }}</li>
+   
+ {% endfor %}
+ </ul> {% endcomment %}
+
+
+
+ <form action="#" method="post">
+
+  <label for="name">Name</label>
+  <input type="text">
+ </form>
+ {% block js %}
+ <script src="{% static 'enroll/js/script.js' %}"></script>
+ <script src="https://kit.fontawesome.com/d945297329.js" crossorigin="anonymous"></script>
+{% endblock js %}
+
+
+
+
+
+{% endblock content %}

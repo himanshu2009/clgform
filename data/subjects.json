@@ -1,67 +1,548 @@
 {
   "Computer Science and Engineering": {
     "sem 1": [
-      "transmission control protocol(Th)",
-      "transmission control protocol(Pr)",
-      "linux operating system(Th)",
-      "linux operating system(Pr)",
-      "adbms(Th)",
-      "adbms(Pr)",
-      "information security(Th)",
-      "information security(Pr)",
-      "big data(Th)",
-      "big data(Pr)",
-      "big data(Th)",
-      "big data(Pr)",
-      "big data(Th)",
-      "big data(Pr)"
+      "Chemistry(Th)",
+      "Chemistry(Pr)",
+      "Programming for Problem Solving(Th)",
+      "Programming for Problem Solving(Pr)",
+      "Mathematics-I(Th)",
+      "Professional Communication(Th)",
+      "Professional Communication(Pr)",
+      "Workshop/Manufacturing Process(Pr)",
+      "Environmental Science(Audit)"
+     
     ],
     "sem 2": [
-      "Data Structures and Algorithms(Th)",
-      "Data Structures and Algorithms(Pr)",
-      "discreate mathematics(Th)",
-      "discreate mathematics(Pr)",
-      "theory of computation(Th)",
-      "theory of computation(Pr)",
-      "Mathematics-III(Th)",
-      "Mathematics-III(Pr)"
+      "Physics(Th)",
+      "Physics(Pr)",
+      "Engineering Graphics(Th)",
+      "Engineering Graphics(Pr)",
+      "Engineering Mechanics(Th)",
+      "Engineering Mechanics(Pr)",
+      "Mathematics-II(Th)",
+      "Basic Electrical Engineering(Th)",
+      "Basic Electrical Engineering(Pr)",
+      "Engineering Exploration(Pr)"
+      
+
+    ],
+    "sem 3":[
+     
+      "Mathematics-III Applied Linear Algebra(Th)",
+      "Digital Electronics(Th)",
+      "Digital Electronics(Pr)",
+      "Human Values and Professional Ethics(Th)",
+      "Discrete Mathematics(Th)",
+      "Discrete Mathematics(Pr)",
+      "Data structures(Th)",
+      "Data structures(Pr)",
+      "Object Oriented Programming with Java(Th)",
+      "Object Oriented Programming with Java(Pr)",
+      "Numerical and Scientifuc Computing(Th)",
+      "Numerical and Scientifuc Computing(Pr)"
+
+    ],
+    "sem 4":[
+      "Mathematics-IV Vector Calculus and Statistical Methods(Th)",
+      "Indian Constitution(Audit)",
+      "Microprocessors and Interfacing(Th)",
+      "Microprocessors and Interfacing(Pr)",
+      "Computer Organization and Architecture(Th)",
+      "Design and Analysis of Algorithm(Th)",
+      "Design and Analysis of Algorithm(Pr)",
+      "Python Programming(Th)",
+      "Python Programming(Pr)"
+
+    ],
+    "sem 5":[
+      "Employability Skills-I(Audit)",
+      "Software Engineering(Th)",
+      "Software Engineering(Pr)",
+      "Database Management Systems(Th)",
+      "Database Management Systems(Pr)",
+      "Formal Language & Automata Theory(Th)",
+      "Operating Systems(Th)",
+      "Operating Systems(Pr)",
+      "Elective-I(Th)",
+      "Elective-I(Pr)",
+      "Technical Seminar(Pr)"
+    ],
+    "sem 6":[
+      "Employability Skills-II",
+      "Compiler Design(Th)",
+      "Compiler Design(Pr)",
+      "Data Communication & Networking (Th)",
+      "Data Communication & Networking (Pr)",
+      "Unix System Programming(Th)",
+      "Unix System Programming(Pr)",
+      "Advanced Algorithms(Th)",
+      "Advanced Algorithms(Pr)",
+      "Elective-II (Th)",
+      "Elective-II (Pr)"
+    ],
+    "sem 7":[
+      "Advanced Database Management Systems(Th)",
+      "Advanced Database Management Systems(Pr)",
+      "TCP/IP Networking(Th)",
+      "TCP/IP Networking(Pr)",
+      "Cryptography and Network Security(Th)",
+      "Cryptography and Network Security(Pr)",
+      "Distributed Computing(Th)",
+      "Distributed Computing(Pr)",
+      "Elective-II(Th)",
+      "Elective-II(Pr)",
+      "Elective-IV(Th)",
+      "Elective-IV(Pr)"
+            
+    ],
+    "sem 8":[
+      "Project"
+      
+    ]
+
+  },
+  "Electronics and telecommunication": {
+    "sem 1": [
+      "Chemistry(Th)",
+      "Chemistry(Pr)",
+      "Programming for Problem Solving(Th)",
+      "Programming for Problem Solving(Pr)",
+      "Mathematics-I(Th)",
+      "Professional Communication(Th)",
+      "Professional Communication(Pr)",
+      "Workshop/Manufacturing Process(Pr)",
+      "Environmental Science(Audit)"
+     
+    ],
+    "sem 2": [
+      "Physics(Th)",
+      "Physics(Pr)",
+      "Engineering Graphics(Th)",
+      "Engineering Graphics(Pr)",
+      "Engineering Mechanics(Th)",
+      "Engineering Mechanics(Pr)",
+      "Mathematics-II(Th)",
+      "Basic Electrical Engineering(Th)",
+      "Basic Electrical Engineering(Pr)",
+      "Engineering Exploration(Pr)"
+      
+
+    ],
+    "sem 3":[
+      "Mathematics-III Transform Calculus and Differential Equations(Th)",
+      "Numerical Methods (Th)",
+      "Numerical Methods (Pr)",
+      "Electronic Devices and Circuits(Th)",
+      "Electronic Devices and Circuits(Pr)",
+      "Digital Electronics and Microprocessors(Th)",
+      "Digital Electronics and Microprocessors(Pr)",
+      "Network Theory(Th)",
+      "Network Theory(Pr)",
+      "Mathematical Foundation for Engineering(Audit)",
+      "Indian Constitution(Audit)"
+    ],
+    "sem 4":[
+      "Mathematics-IV: Statistical Methods and Complex Analysis(Th)",
+      "Data Structures(Th)",
+      "Data Structures(Pr)",
+      "Communication Engineering Principles(Th)",
+      "Communication Engineering Principles(Pr)",
+      "Analog Circuits and Design (Th)",
+      "Analog Circuits and Design (Pr)",
+      "Microcontrollers and Applications(Th)",
+      "Microcontrollers and Applications(Pr)",
+      "Human Values and Professional Ethics(Audit)"
+
+    ],
+    "sem 5":[
+      "Electromagnetic Engineering(Th)",
+      "Control Systems(Th)",
+      "Control Systems (Pr)",
+      "Communication Systems Theory(Th)",
+      "Communication Systems Theory(Pr)",
+      "Signals and Systems(Th)",
+      "Signals and Systems(Pr)",
+      "Program Elective-I(Th)",
+      "Industrial Management for Engineers(Th)",
+      "Seminar(Pr)"
+
+      
+    ],
+    "sem 6":
+    [
+      "Linear Integrated Circuits(Th)",
+      "Linear Integrated Circuits(Pr)",
+      "Digital Communication(Th)",
+      "Digital Communication(Pr)",
+      "Digital Signal Processing(Th)",
+      "Embedded Systems(Th)",
+      "Embedded Systems(Pr)",
+      "Program Elective -II(Th)",
+      "Program Elective -II(Pr)",
+      "Mini Project(Pr)"
+    ],
+    "sem 7":[
+      "Microwave Engineering(Th)",
+      "Microwave Engineering(Pr)",
+      "Electronic Instrumentation (Th)",
+      "Electronic Instrumentation (Pr)",
+      "Elective-III (Th)",
+      "Elective-III (Pr)",
+      "Elective-IV (Th)",
+      "Elective-IV (Pr)",
+      "Elective-V (Pr)"
+      
+
+
+
+    ],
+    "sem 8":[
+      "Project(Pr)",
+      "Elective-VI(Th)",
+      "Elective-VII(Th)"
+    ]
+
+    
+  },
+
+  "Information Technology":{
+
+    "sem 1":[
+      "Chemistry(Th)",
+      "Chemistry(Pr)",
+      "Programming for Problem Solving(Th)",
+      "Programming for Problem Solving(Pr)",
+      "Mathematics-I(Th)",
+      "Professional Communication(Th)",
+      "Professional Communication(Pr)",
+      "Workshop/Manufacturing Process(Pr)",
+      "Environmental Science(Audit)"
+
+    ],
+    "sem 2": [
+      "Physics(Th)",
+      "Physics(Pr)",
+      "Engineering Graphics(Th)",
+      "Engineering Graphics(Pr)",
+      "Engineering Mechanics(Th)",
+      "Engineering Mechanics(Pr)",
+      "Mathematics-II(Th)",
+      "Basic Electrical Engineering(Th)",
+      "Basic Electrical Engineering(Pr)",
+      "Engineering Exploration(Pr)"
+      
+
     ],
 
     "sem 3":[
-      "Chemistry",
-      "Physics",
-      "Professional communication",
-      "PPS"
+      "Mathematics-III: Applied Linear Algebra(Th)",
+      "Data Structures(Th)",
+      "Data structures(Pr)",
+      "Object Oriented Programming(Th)",
+      "Object Oriented Programming(Pr)",
+      "Discrete Mathematics(Th)",
+      "Discrete Mathematics(Pr)",
+      "Digital Systems Design(Th) ",
+      "Digital Systems Design(Pr) ",
+      "Computer Laboratory-I(Pr)",
+      "Mathematical Foundation for Engineering(Audit)",
+      "Indian Constitution(Audit)"
+
+      
+
+
+    ],
+    "sem 4":[
+      "Mathematics-IV: Vector Calculus and Statistical Methods(Th)",
+      "Computer Organization and Architecture(Th)",
+      "Microprocessors and Interfacing(Th)",
+      "Microprocessors and Interfacing(Pr)",
+      "Java Programming(Th)",
+      "Java Programming(Pr)",
+      "Computer Laboratory-II(Pr)",
+      "Elective-I(Th)",
+      "Elective-I(Pr)",
+      "Soft Skill Development(Pr)",
+      "Human Values and Professional Ethics(Th)"
+
+      
+
+
+
+
+    ],
+    "sem 5":[
+      "Theory of Computation(Th)",
+      "Software Engineering(Th)",
+      "Software Engineering(Pr)",
+      "Operating Systems(Th)",
+      "Operating Systems(Pr)",
+      "Data Base Management System(Th)",
+      "Data Base Management System(Pr)",
+      "Python Programming(Th)",
+      "Python Programming(Pr)",
+      "Seminar-I(Pr)"
+    ],
+    "sem 6":[
+      "Machine Learning(Th)",
+      "Machine Learning(Pr)",
+      "Design and Analysis of Algorithms(Th)",
+      "Design and Analysis of Algorithms(Pr)",
+      "Computer Networks(Th)",
+      "Computer Networks(Pr)",
+      "Elective-II (Th)",
+      "Compiler Design(Th)",
+      "Compiler Design(Pr)",
+      "Computer Laboratory-III: Full Stack Development(Pr)"
+    ],
+
+    "sem 7":[
+      "Cryptography and Network Security(Th)",
+      "Cryptography and Network Security(Pr)",
+      "Mobile and Wireless Communication(Th)",
+      "Mobile and Wireless Communication(Pr)",
+      "Internet of Things(Th)",
+      "Internet of Things(Pr)",
+      "Elective-III (Th)",
+      "Elective-III (Pr)",
+      "Elective-IV (Th)",
+      "Computer Laboratory-V(Pr)",
+      "Project-I(Pr)"
+
+
+
+    ],
+    "sem 8":[
+      "Project/Internship(Pr)"
+
+    ]
+
+    
+
+
+  },
+  "Electrical Engineering":{
+    "sem 1": [
+      "Chemistry(Th)",
+      "Chemistry(Pr)",
+      "Programming for Problem Solving(Th)",
+      "Programming for Problem Solving(Pr)",
+      "Mathematics-I(Th)",
+      "Professional Communication(Th)",
+      "Professional Communication(Pr)",
+      "Workshop/Manufacturing Process(Pr)",
+      "Environmental Science(Audit)"
+     
+    ],
+    "sem 2": [
+      "Physics(Th)",
+      "Physics(Pr)",
+      "Engineering Graphics(Th)",
+      "Engineering Graphics(Pr)",
+      "Engineering Mechanics(Th)",
+      "Engineering Mechanics(Pr)",
+      "Mathematics-II(Th)",
+      "Basic Electrical Engineering(Th)",
+      "Basic Electrical Engineering(Pr)",
+      "Engineering Exploration(Pr)"
+      
+
+    ],
+    "sem 3":[
+      "Mathematics-III: Numerical Methods and Differential Equations(Th)",
+      "Analog Electronic Circuits(Th)",
+      "Analog Electronic Circuits(Pr)",
+      "Electrical Machines-I(Th)",
+      "Electrical Machines-I(Pr)",
+      "Circuit Theory(Th)",
+      "Circuit Theory(Pr)",
+      "Electromagnetic Fields(Th)",
+      "Computer Application in Electrical Engineering(Pr)",
+      "Mathematical Foundation for Engineering(Audit)",
+      "Indian Constitution(Audit)"
+
+
+
+
+      
+    ],
+    "sem 4":[
+      "Mathematics-IV: Statistical Methods and Complex Analysis(Th)",
+      "Electrical Machines-II(Th)",
+      "Electrical Machines-II(Pr)",
+      "Digital Electronics and Logic Design(Th)",
+      "Digital Electronics and Logic Design(Pr)",
+      "Electrical and Electronics Measurements(Th)",
+      "Electrical and Electronics Measurements(Pr)",
+      "Signals and Systems(Th)",
+      "Human Values and Professional Ethics(Th)"
+
+
+    ],
+    "sem 5":[
+      "Power System Engineering(Th)",
+      "Power System Engineering(Pr)",
+      "Feedback Control System(Th)",
+      "Feedback Control System(Pr)",
+      "Microprocessor and Microcontroller(Th)",
+      "Microprocessor and Microcontroller(Pr)",
+      "Digital Signal Processing(Th)",
+      "Digital Signal Processing(Pr)",
+      "Elective-I(Th)",
+      "Mini Project and Seminar-I(Pr)"
+
+
+    ],
+    "sem 6":[
+     "Power System Analysis and Stability(Th)", 
+     "Power System Analysis and Stability(Pr)", 
+     "Control System Design(Th)",
+     "Control System Design(Pr)",
+     "Power Electronics(Th)",
+     "Power Electronics(Pr)",
+     "Power Plant Engineering(Th)",
+     "Elective-II(Th)",
+     "Mini Project and Seminar-II(Pr)"
+
+
+
+    ],
+    "sem 7":[
+      "Industrial Drives and Control(Th)",
+      "Industrial Drives and Control(Pr)",
+      "Switchgear and Protection(Th)",
+      "Switchgear and Protection(Pr)",
+      "Electrical Machine Design(Th)",
+      "Electrical Machine Design(Pr)",
+      "Industrial Economics and Management(Th)",
+      "Elective-III(Th)",
+      "Elective-III(Pr)",
+      "Project Work-I(Pr)"
+
+
+    ],
+    "sem 8":[
+      "Elective-IV(Th)",
+      "Elective-V(Th)",
+      "Elective-V(Pr)",
+      "Seminar on Industrial Training(Pr)",
+      "Project Work-II (In house)(Pr)"
+
+
+
+    ],
+    "Civil Engineering":{
+
+      "sem 1":[
+
+      "Chemistry(Th)",
+      "Chemistry(Pr)",
+      "Programming for Problem Solving(Th)",
+      "Programming for Problem Solving(Pr)",
+      "Mathematics-I(Th)",
+      "Professional Communication(Th)",
+      "Professional Communication(Pr)",
+      "Workshop/Manufacturing Process(Pr)",
+      "Environmental Science(Audit)"
+     
+    ],
+    "sem 2": [
+      "Physics(Th)",
+      "Physics(Pr)",
+      "Engineering Graphics(Th)",
+      "Engineering Graphics(Pr)",
+      "Engineering Mechanics(Th)",
+      "Engineering Mechanics(Pr)",
+      "Mathematics-II(Th)",
+      "Basic Electrical Engineering(Th)",
+      "Basic Electrical Engineering(Pr)",
+      "Engineering Exploration(Pr)"
+      
+
+    ],
+
+    "sem 3":[
+      "Mathematics-III: Transform Calculus and Differential Equations(Th)",
+      "Strength of Materials(Th)",
+      "Strength of Materials(Pr)",
+      "Fluid Mechanics(Th)",
+      "Fluid Mechanics(Pr)",
+      "Surveying and Geomatics(Th)",
+      "Surveying and Geomatics(Pr)",
+      "Building Construction(Th)",
+      "Building Construction(Pr)",
+      "Civil-Societal and Global Impact(Th)",
+      "Mathematical Foundation for Engineering(Audit)"
+
 
     ],
 
     "sem 4":[
-      "operating system",
-      "cyber security"
+      "Mathematics-IV: Statistical and Numerical Methods(Th) ",
+      "Theory of Structures-I(Th)",
+      "Hydraulic Engineering(Th)",
+      "Hydraulic Engineering(Pr)",
+      "Concrete Technology(Th)",
+      "Concrete Technology(Pr)",
+      "Building Planning and Computer Aided Drawing(Th)",
+      "Building Planning and Computer Aided Drawing(Pr)",
+      "Basic Electronics(Th)",
+      "Basic Electronics(Pr)",
+      "Indian Constitution(Audit)"
+
+
     ],
     "sem 5":[
-      "operating system",
-      "cyber security"
+      "Design of Steel Structures (Th)",
+      "Environmental Engineering(Th)",
+      "Environmental Engineering(Pr)",
+      "Engineering Hydrology(Th)",
+      "Engineering Hydrology(Pr)",
+      "Transportation Engineering(Th)",
+      "Transportation Engineering(Pr)",
+      "Elective-I(Th)",
+      "Engineering Geology(Audit)"
+
+
     ],
     "sem 6":[
-      "operating system",
-      "cyber security"
+      "Theory of Structures-II(Th)",
+      "Geotechnical Engineering(Th)",
+      "Geotechnical Engineering(Pr)",
+      "Reinforced Cement Concrete Structures(Th)",
+      "Reinforced Cement Concrete Structures(Pr)",
+      "Water Resources Engineering(Th)",
+      "Elective-II (Th)",
+      "Elective-III(Th)"
+
     ],
     "sem 7":[
-      "operating system",
-      "cyber security"
+      "Advanced Concrete Structures(Th)",
+      "Advanced Concrete Structures(Pr)",
+      "Engineering Economics, Estimation and Costing(Th)",
+      "Engineering Economics, Estimation and Costing(Pr)",
+      "Foundation Engineering(Th)",
+      "Elective-IV(Th)",
+      "Elective-V (Th)",
+      "Elective-VI(Th)",
+      "Seminar(Pr)"
+
+
     ],
     "sem 8":[
-      "operating system",
-      "cyber security"
+      "Project(Industry/In-house)(Pr)",
+      "Professional Practice,Law & Ethics(Th)"
     ]
-  },
-  "Information and Technology": {
-    "sem 1": [
-      "Linear Algebra"
-    ],
-    "sem 2": [
-      "Calculus III"
-    ]
+
+
+
+      
+    }
+
+
+
+    
+
+
   }
 }
